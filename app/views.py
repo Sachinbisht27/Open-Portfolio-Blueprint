@@ -1,12 +1,13 @@
-import flask, random, time
+import flask
+import random
+import time
 from app import app
 
 
 @app.route("/")
 def hello_world():
-    return flask.render_template(
-        "home.html", cache_buster=random.random(), time=time
-    )
+    return flask.render_template("home.html", cache_buster=random.random(), time=time)
+
 
 @app.after_request
 def add_cache_control(response):
