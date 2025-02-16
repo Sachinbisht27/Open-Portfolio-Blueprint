@@ -29,7 +29,7 @@ repos:
 - repo: https://github.com/PyCQA/docformatter
   rev: v1.7.5
   hooks:
-    - id: docformatter
+    - id: docformatter[tomli]
     - language: system
 -   repo: https://github.com/pre-commit/pygrep-hooks
     rev: v1.10.0
