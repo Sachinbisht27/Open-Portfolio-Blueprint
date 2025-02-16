@@ -27,10 +27,11 @@ repos:
         exclude: __init__.py
         args: [--max-line-length=88]
 - repo: https://github.com/PyCQA/docformatter
-  rev: v1.7.5
+  rev: v1.7.1
   hooks:
-    - id: docformatter[tomli]
-    - language: system
+    - id: docformatter
+      additional_dependencies: [tomli]
+      args: [--in-place, --config, ./pyproject.toml]
 -   repo: https://github.com/pre-commit/pygrep-hooks
     rev: v1.10.0
     hooks:
