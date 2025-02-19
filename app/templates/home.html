@@ -1,1 +1,59 @@
-Sachin Bisht
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sachin Bisht - Portfolio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v={{ cache_buster }}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="logo"></div>
+        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Skills</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h2>Hello !</h2>
+            <h1>I’m <strong>Sachin Bisht</strong></h1>
+            <h2>I’m a <span class="highlight">full stack</span> Developer</h2>
+            <p>I specialize in developing and deploying responsive websites and web applications.</p>
+            <div class="social-icons">
+                <a href="#"><i class="fab fa-github"></i></a>
+                <a href="#"><i class="fab fa-linkedin"></i></a>
+                <a href="#"><i class="fab fa-stack-overflow"></i></a>
+            </div>
+            <button class="btn">Contact me</button>
+        </div>
+        <div class="hero-image">
+            <img src="{{ url_for('static', filename='images/developer-illustration.png') }}?v={{ time.time() }}">
+        </div>
+    </section>
+
+    <footer>
+        <ul>
+            <li><a href="#">Terms</a></li>
+            <li><a href="#">About me</a></li>
+            <li><a href="#">What’s new</a></li>
+            <li><a href="#">Send feedback</a></li>
+        </ul>
+    </footer>
+
+<script>
+    function toggleMenu() {
+        document.querySelector('.menu-toggle').addEventListener('click', function() {
+            document.querySelector('nav ul').classList.toggle('show');
+        });
+    }
+</script>
+</body>
+</html>

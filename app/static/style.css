@@ -1,0 +1,211 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+    background: #071B4B;
+    color: white;
+    position: fixed;
+    width: 96%;
+    z-index: 1000;
+}
+
+.navbar .logo {
+    font-size: 24px;
+    font-weight: bold;
+    background: white;
+    color: #071B4B;
+    padding: 10px 15px;
+    border-radius: 50%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 5%;
+    background: #071B4B;
+}
+
+nav ul {
+    max-width: 100%;
+    flex-wrap: wrap;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+}
+
+/* Desktop Navigation */
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: lightgray;
+}
+
+/* Mobile Menu */
+.menu-toggle {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    nav ul {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background: #071B4B;
+        position: absolute;
+        top: 50px;
+        left: 0;
+    }
+
+    nav ul.show {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: block;
+        cursor: pointer;
+    }
+}
+
+
+/* Hero Section */
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 120px 50px 50px;
+}
+
+.hero-content {
+    max-width: 500px;
+}
+
+.hero-content h1, h2 {
+    margin: 10px 0;
+}
+
+.hero-content .highlight {
+    font-weight: bold;
+    color: purple;
+}
+
+.social-icons {
+    margin: 20px 0;
+}
+
+.social-icons a {
+    font-size: 24px;
+    margin-right: 15px;
+    color: #071B4B;
+    text-decoration: none;
+}
+
+.btn {
+    background: #071B4B;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+}
+
+.hero-image {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.hero-image img {
+    width: 100%;
+    max-width: 300px;
+}
+
+/* Footer */
+footer {
+    background: #071B4B;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+footer ul li {
+    margin: 0 15px;
+}
+
+footer ul a {
+    color: white;
+    text-decoration: none;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 150px 20px 50px;
+    }
+
+    .hero-image img {
+        max-width: 250px;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    footer ul {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    footer ul li {
+        margin: 5px 0;
+    }
+}
