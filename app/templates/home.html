@@ -7,53 +7,194 @@
     <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v={{ cache_buster }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body>
-    <nav class="navbar">
-        <div class="logo"></div>
-        <div class="menu-toggle" onclick="toggleMenu()">☰</div>
-        <ul class="nav-links">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Skills</a></li>
-            <li><a href="#">Projects</a></li>
-            <li><a href="#">Contact</a></li>
-        </ul>
-    </nav>
+<body id="top">
+    <div class="bg-orb orb-1" aria-hidden="true"></div>
+    <div class="bg-orb orb-2" aria-hidden="true"></div>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h2>Hello !</h2>
-            <h1>I’m <strong>Sachin Bisht</strong></h1>
-            <h2>I’m a <span class="highlight">full stack</span> Developer</h2>
-            <p>I specialize in developing and deploying responsive websites and web applications.</p>
-            <div class="social-icons">
-                <a href="#"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-linkedin"></i></a>
-                <a href="#"><i class="fab fa-stack-overflow"></i></a>
+    <header class="site-header">
+        <nav class="nav">
+            <a class="brand" href="#home">
+                <span class="brand-mark">SB</span>
+                <span class="brand-text">Sachin Bisht</span>
+            </a>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="nav-toggle-bar"></span>
+                <span class="nav-toggle-bar"></span>
+            </button>
+            <ul id="nav-menu" class="nav-menu">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <section id="home" class="section hero">
+            <div class="hero-content">
+                <p class="eyebrow">Full Stack Developer</p>
+                <h1>Building thoughtful, high-performing web experiences.</h1>
+                <p class="lead">I design and ship responsive websites and web apps with clean architecture, delightful UI, and scalable systems.</p>
+                <div class="hero-actions">
+                    <a class="btn primary" href="#contact">Let’s work together</a>
+                    <a class="btn ghost" href="#projects">View projects</a>
+                </div>
+                <div class="social-icons" aria-label="Social links">
+                    <a href="#" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" aria-label="Stack Overflow"><i class="fab fa-stack-overflow"></i></a>
+                </div>
+                <dl class="stats">
+                    <div>
+                        <dt>3+</dt>
+                        <dd>Years building web products</dd>
+                    </div>
+                    <div>
+                        <dt>15+</dt>
+                        <dd>Projects launched</dd>
+                    </div>
+                </dl>
             </div>
-            <button class="btn">Contact me</button>
-        </div>
-        <div class="hero-image">
-            <img src="{{ url_for('static', filename='images/developer-illustration.png') }}?v={{ time.time() }}">
-        </div>
-    </section>
+            <div class="hero-media">
+                <div class="hero-card">
+                    <span class="chip">Available for freelance</span>
+                    <h3>Product-minded engineering</h3>
+                    <p>From discovery to deployment, I translate ideas into polished, accessible, and fast experiences.</p>
+                </div>
+                <div class="hero-illustration">
+                    <img src="{{ url_for('static', filename='images/developer-illustration.png') }}?v={{ time.time() }}" alt="Developer illustration">
+                </div>
+            </div>
+        </section>
 
-    <footer>
-        <ul>
-            <li><a href="#">Terms</a></li>
-            <li><a href="#">About me</a></li>
-            <li><a href="#">What’s new</a></li>
-            <li><a href="#">Send feedback</a></li>
-        </ul>
+        <section id="about" class="section about">
+            <div class="section-head">
+                <p class="eyebrow">About</p>
+                <h2>Designing with intention, engineering with rigor.</h2>
+            </div>
+            <div class="about-grid">
+                <p>I focus on building resilient frontend systems and clean backend integrations. My work blends rapid prototyping with production-grade practices like accessibility, performance budgets, and modular architecture.</p>
+                <p>When I’m not coding, I’m exploring design systems, refining micro-interactions, and finding new ways to simplify complex workflows.</p>
+            </div>
+        </section>
+
+        <section id="skills" class="section skills">
+            <div class="section-head">
+                <p class="eyebrow">Skills</p>
+                <h2>Tools and technologies I work with daily.</h2>
+            </div>
+            <div class="skills-grid">
+                <article class="skill-card">
+                    <h3>Frontend</h3>
+                    <p>React, TypeScript, Next.js, Tailwind, accessibility-first UI.</p>
+                </article>
+                <article class="skill-card">
+                    <h3>Backend</h3>
+                    <p>Node.js, Flask, REST APIs, authentication, database design.</p>
+                </article>
+                <article class="skill-card">
+                    <h3>UX &amp; UI</h3>
+                    <p>Wireframes, component systems, motion, usability testing.</p>
+                </article>
+                <article class="skill-card">
+                    <h3>Performance</h3>
+                    <p>Core Web Vitals, lazy loading, caching, optimization.</p>
+                </article>
+                <article class="skill-card">
+                    <h3>DevOps</h3>
+                    <p>CI/CD, Vercel, Docker basics, monitoring.</p>
+                </article>
+                <article class="skill-card">
+                    <h3>Collaboration</h3>
+                    <p>Agile delivery, documentation, stakeholder alignment.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="projects" class="section projects">
+            <div class="section-head">
+                <p class="eyebrow">Projects</p>
+                <h2>Selected work that balances craft and impact.</h2>
+            </div>
+            <div class="projects-grid">
+                <article class="project-card">
+                    <div class="project-meta">
+                        <span>Fintech Dashboard</span>
+                        <span>2024</span>
+                    </div>
+                    <h3>Real-time analytics dashboard</h3>
+                    <p>Built a multi-tenant dashboard with live KPI tracking and custom reporting.</p>
+                    <a class="text-link" href="#">View case study</a>
+                </article>
+                <article class="project-card">
+                    <div class="project-meta">
+                        <span>Healthcare Platform</span>
+                        <span>2023</span>
+                    </div>
+                    <h3>Patient engagement portal</h3>
+                    <p>Delivered a responsive portal with scheduling, messaging, and records access.</p>
+                    <a class="text-link" href="#">View case study</a>
+                </article>
+                <article class="project-card">
+                    <div class="project-meta">
+                        <span>Education SaaS</span>
+                        <span>2023</span>
+                    </div>
+                    <h3>Learning management experience</h3>
+                    <p>Designed modular learning flows and instructor tooling for scale.</p>
+                    <a class="text-link" href="#">View case study</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="contact" class="section contact">
+            <div class="section-head">
+                <p class="eyebrow">Contact</p>
+                <h2>Let’s build something exceptional together.</h2>
+            </div>
+            <div class="contact-card">
+                <div>
+                    <h3>Start a conversation</h3>
+                    <p>Share your goals, timeline, or a quick product idea. I’ll reply within 24 hours.</p>
+                </div>
+                <div class="contact-actions">
+                    <a class="btn primary" href="mailto:sachin@example.com">Email me</a>
+                    <a class="btn ghost" href="#">Download resume</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <p>© 2026 Sachin Bisht. Built with intention.</p>
+        <div class="footer-links">
+            <a href="#about">About</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </div>
     </footer>
 
 <script>
-    function toggleMenu() {
-        document.querySelector('.menu-toggle').addEventListener('click', function() {
-            document.querySelector('nav ul').classList.toggle('show');
+    const navToggle = document.querySelector('.nav-toggle');
+    const navMenu = document.querySelector('.nav-menu');
+
+    navToggle.addEventListener('click', () => {
+        const isOpen = navMenu.classList.toggle('is-open');
+        navToggle.setAttribute('aria-expanded', isOpen);
+    });
+
+    navMenu.querySelectorAll('a').forEach((link) => {
+        link.addEventListener('click', () => {
+            navMenu.classList.remove('is-open');
+            navToggle.setAttribute('aria-expanded', 'false');
         });
-    }
+    });
 </script>
 </body>
 </html>
