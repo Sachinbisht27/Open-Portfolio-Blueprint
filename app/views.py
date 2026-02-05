@@ -11,12 +11,16 @@ def home():
 
 @app.route("/projects")
 def projects():
-    return flask.render_template("projects.html", cache_buster=random.random(), time=time)
+    return flask.render_template(
+        "projects.html", cache_buster=random.random(), time=time
+    )
 
 
 @app.route("/projects/dost")
 def project_dost():
-    return flask.render_template("project_dost.html", cache_buster=random.random(), time=time)
+    return flask.render_template(
+        "project_dost.html", cache_buster=random.random(), time=time
+    )
 
 
 @app.route("/resume")
@@ -26,7 +30,9 @@ def resume():
 
 @app.route("/contact")
 def contact():
-    return flask.render_template("contact.html", cache_buster=random.random(), time=time)
+    return flask.render_template(
+        "contact.html", cache_buster=random.random(), time=time
+    )
 
 
 @app.after_request
