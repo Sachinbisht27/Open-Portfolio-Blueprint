@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="section page-hero">
+    <div>
+        <p class="eyebrow">Contact</p>
+        <h1>Let’s build something exceptional together.</h1>
+        <p class="lead">I’m open to full-time roles, consulting, and product partnerships. Tell me what you’re building and how I can help.</p>
+    </div>
+</section>
+
+<section class="section">
+    <div class="contact-card">
+        <div>
+            <h3>Start a conversation</h3>
+            <p>Share your goals, timeline, or a quick product idea. I’ll reply within 24 hours.</p>
+        </div>
+        <div class="contact-actions">
+            <a class="btn primary" href="mailto:sachin@example.com">Email me</a>
+            <a class="btn ghost" href="{{ url_for('projects') }}">View projects</a>
+        </div>
+    </div>
+</section>
+{% endblock %}
