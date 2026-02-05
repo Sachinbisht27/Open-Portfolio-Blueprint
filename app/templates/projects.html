@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="section page-hero">
+    <div>
+        <p class="eyebrow">Projects</p>
+        <h1>Case studies and highlights.</h1>
+        <p class="lead">A curated set of projects showing my approach to product thinking, architecture, and delivery.</p>
+    </div>
+</section>
+
+<section class="section projects">
+    <div class="projects-grid">
+        <article class="project-card">
+            <div class="project-meta">
+                <span>DOST Education</span>
+                <span>2021-2024</span>
+            </div>
+            <h3>Call scheduling &amp; automation platform</h3>
+            <p>IVR + callback system automating parent-student engagement at scale.</p>
+            <a class="text-link" href="{{ url_for('project_dost') }}">Read full case study</a>
+        </article>
+        <article class="project-card">
+            <div class="project-meta">
+                <span>Healthcare Platform</span>
+                <span>2023</span>
+            </div>
+            <h3>Patient engagement portal</h3>
+            <p>Responsive portal with scheduling, messaging, and records access.</p>
+            <a class="text-link" href="{{ url_for('contact') }}">Request details</a>
+        </article>
+        <article class="project-card">
+            <div class="project-meta">
+                <span>Education SaaS</span>
+                <span>2023</span>
+            </div>
+            <h3>Learning management experience</h3>
+            <p>Modular learning flows and instructor tooling for scale.</p>
+            <a class="text-link" href="{{ url_for('contact') }}">Request details</a>
+        </article>
+    </div>
+</section>
+{% endblock %}
