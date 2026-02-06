@@ -1,23 +1,136 @@
 {% extends "base.html" %}
 
 {% block content %}
-<section class="section page-hero">
+<section class="section page-hero animate-on-scroll">
     <div>
         <p class="eyebrow">Contact</p>
-        <h1>Let’s build something exceptional together.</h1>
-        <p class="lead">I’m open to full-time roles, consulting, and product partnerships. Tell me what you’re building and how I can help.</p>
+        <h1>Let's create something amazing together.</h1>
+        <p class="lead">Have a project in mind? Want to collaborate? Or just want to say hi? I'd love to hear from you!</p>
     </div>
 </section>
 
+<!-- Success Message -->
+<script>
+    // Check if form was submitted successfully
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('success') === 'true') {
+        const successBanner = document.createElement('div');
+        successBanner.style.cssText = 'background: linear-gradient(135deg, #10b981, #059669); color: white; padding: 20px; text-align: center; border-radius: 12px; margin: 0 24px 20px; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);';
+        successBanner.innerHTML = '<h3 style="margin: 0 0 8px; font-size: 20px;">✅ Message Sent Successfully!</h3><p style="margin: 0;">Thank you for reaching out! I\'ll get back to you within 24 hours.</p>';
+        document.querySelector('.section').insertAdjacentElement('beforebegin', successBanner);
+        
+        // Remove success parameter from URL after 5 seconds
+        setTimeout(() => {
+            window.history.replaceState({}, document.title, window.location.pathname);
+            successBanner.style.transition = 'opacity 0.5s';
+            successBanner.style.opacity = '0';
+            setTimeout(() => successBanner.remove(), 500);
+        }, 5000);
+    }
+</script>
+
 <section class="section">
-    <div class="contact-card">
-        <div>
-            <h3>Start a conversation</h3>
-            <p>Share your goals, timeline, or a quick product idea. I’ll reply within 24 hours.</p>
+    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px;">
+        <!-- Contact Form -->
+        <div class="animate-on-scroll">
+            <form action="https://formsubmit.co/sachinbisht27@gmail.com" method="POST" class="contact-form">
+                <!-- FormSubmit Configuration -->
+                <input type="hidden" name="_subject" value="New Portfolio Contact from Website!">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
+                <input type="text" name="_honey" style="display:none">
+                <input type="hidden" name="_next" value="http://127.0.0.1:5000/contact?success=true">
+                
+                <div class="form-group">
+                    <label for="name" class="form-label">Your Name *</label>
+                    <input type="text" id="name" name="name" class="form-input" required placeholder="John Doe">
+                </div>
+                
+                <div class="form-group">
+                    <label for="email" class="form-label">Email Address *</label>
+                    <input type="email" id="email" name="email" class="form-input" required placeholder="john@example.com">
+                </div>
+                
+                <div class="form-group">
+                    <label for="subject" class="form-label">Subject *</label>
+                    <input type="text" id="subject" name="subject" class="form-input" required placeholder="Project Inquiry">
+                </div>
+                
+                <div class="form-group">
+                    <label for="message" class="form-label">Message *</label>
+                    <textarea id="message" name="message" class="form-textarea" required placeholder="Tell me about your project..."></textarea>
+                </div>
+                
+                <button type="submit" class="btn primary submit-btn">Send Message</button>
+            </form>
         </div>
-        <div class="contact-actions">
-            <a class="btn primary" href="mailto:sachin@example.com">Email me</a>
-            <a class="btn ghost" href="{{ url_for('projects') }}">View projects</a>
+
+        <!-- Contact Info -->
+        <div class="animate-on-scroll">
+            <div class="content-card" style="margin-bottom: 24px;">
+                <h3>📧 Email</h3>
+                <p>sachinbisht27@gmail.com</p>
+                <button class="copy-btn" data-copy="sachinbisht27@gmail.com" style="margin-top: 12px;">
+                    <i class="fas fa-copy"></i>
+                    <span>Copy Email</span>
+                </button>
+            </div>
+
+            <div class="content-card" style="margin-bottom: 24px;">
+                <h3>🔗 Connect</h3>
+                <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 12px;">
+                    <a href="https://github.com/Sachinbisht27" target="_blank" rel="noopener noreferrer" class="text-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a>
+                    <a href="https://www.linkedin.com/in/sachin-bisht-080981158/" target="_blank" rel="noopener noreferrer" class="text-link">
+                        <i class="fab fa-linkedin"></i> LinkedIn
+                    </a>
+                    <a href="https://stackoverflow.com/users/19982527/sachin-bisht?tab=profile" target="_blank" rel="noopener noreferrer" class="text-link">
+                        <i class="fab fa-stack-overflow"></i> Stack Overflow
+                    </a>
+                </div>
+            </div>
+
+            <div class="content-card">
+                <h3>⏰ Availability</h3>
+                <p>Currently available for freelance projects and full-time opportunities.</p>
+                <p style="margin-top: 12px; color: var(--accent); font-weight: 600;">
+                    <i class="fas fa-circle" style="font-size: 8px; vertical-align: middle;"></i>
+                    Available Now
+                </p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Quick Contact Options -->
+<section class="section">
+    <div class="section-head animate-on-scroll">
+        <h2>Prefer other ways to connect?</h2>
+    </div>
+    <div class="content-grid">
+        <div class="content-card tilt-card animate-on-scroll">
+            <h3>💼 LinkedIn Message</h3>
+            <p>Connect with me professionally and send a message on LinkedIn.</p>
+            <a href="https://www.linkedin.com/in/sachin-bisht-080981158/" target="_blank" rel="noopener noreferrer" class="btn ghost" style="margin-top: 16px; width: 100%;">
+                Open LinkedIn
+            </a>
+        </div>
+
+        <div class="content-card tilt-card animate-on-scroll">
+            <h3>📄 View Resume</h3>
+            <p>Download my resume to learn more about my experience and skills.</p>
+            <a href="{{ url_for('resume') }}" class="btn ghost" style="margin-top: 16px; width: 100%;">
+                Get Resume
+            </a>
+        </div>
+
+        <div class="content-card tilt-card animate-on-scroll">
+            <h3>💻 GitHub</h3>
+            <p>Check out my open-source contributions and personal projects.</p>
+            <a href="https://github.com/Sachinbisht27" target="_blank" rel="noopener noreferrer" class="btn ghost" style="margin-top: 16px; width: 100%;">
+                View GitHub
+            </a>
         </div>
     </div>
 </section>
