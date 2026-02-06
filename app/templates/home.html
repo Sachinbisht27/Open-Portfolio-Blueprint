@@ -2,12 +2,12 @@
 
 {% block content %}
 <section id="home" class="section hero">
-    <div class="hero-content">
-        <p class="eyebrow">Full Stack Developer</p>
-        <h1>Building thoughtful, high-performing web experiences.</h1>
-        <p class="lead">I design and ship responsive websites and web apps with clean architecture, delightful UI, and scalable systems.</p>
+    <div class="hero-content animate-on-scroll">
+        <p class="eyebrow"><span class="typing-text">Full Stack Developer</span></p>
+        <h1>Hi, I'm Sachin 👋<br> <br>Building thoughtful, high-performing web experiences.</h1>
+        <p class="lead">I design and ship responsive websites and web apps with clean architecture, delightful UI, and scalable systems. Passionate about creating digital experiences that make a difference.</p>
         <div class="hero-actions">
-            <a class="btn primary" href="{{ url_for('contact') }}">Let’s work together</a>
+            <a class="btn primary" href="{{ url_for('contact') }}">Let's work together</a>
             <a class="btn ghost" href="{{ url_for('projects') }}">View projects</a>
         </div>
         <div class="social-icons" aria-label="Social links">
@@ -17,119 +17,348 @@
         </div>
         <dl class="stats">
             <div>
-                <dt>3+</dt>
+                <dt class="stat-number" data-value="3">0+</dt>
                 <dd>Years building web products</dd>
             </div>
             <div>
-                <dt>15+</dt>
-                <dd>Projects launched</dd>
+                <dt class="stat-number" data-value="5">0+</dt>
+                <dd>Projects worked on</dd>
             </div>
         </dl>
     </div>
-    <div class="hero-media">
-        <div class="hero-card">
-            <span class="chip">Available for freelance</span>
+    <div class="hero-media animate-on-scroll">
+        <div class="hero-card tilt-card">
+            <span class="chip">✨ Available for freelance</span>
             <h3>Product-minded engineering</h3>
             <p>From discovery to deployment, I translate ideas into polished, accessible, and fast experiences.</p>
         </div>
         <div class="hero-illustration">
-            <img src="{{ url_for('static', filename='images/developer-illustration.png') }}?v={{ time.time() }}" alt="Developer illustration">
+            <img src="{{ url_for('static', filename='images/developer-illustration.svg') }}" alt="Developer illustration">
         </div>
     </div>
 </section>
 
 <section id="about" class="section about">
-    <div class="section-head">
+    <div class="section-head animate-on-scroll">
         <p class="eyebrow">About</p>
         <h2>Designing with intention, engineering with rigor.</h2>
     </div>
     <div class="about-grid">
-        <p>I focus on building resilient frontend systems and clean backend integrations. My work blends rapid prototyping with production-grade practices like accessibility, performance budgets, and modular architecture.</p>
-        <p>When I’m not coding, I’m exploring design systems, refining micro-interactions, and finding new ways to simplify complex workflows.</p>
+        <p class="animate-on-scroll">I'm a passionate Full Stack Developer with <strong>3+ years of experience</strong> building scalable web applications and automation systems. Currently working at <strong>DOST Education</strong> (since 2023) where I led development of call scheduling & automation platforms with IVR systems, and at <strong>MentorTogether</strong> (since 2025) developing comprehensive mentorship platforms.</p>
+        <p class="animate-on-scroll">My expertise spans <strong>Python, Flask, React, TypeScript, PostgreSQL, and AWS</strong>. I specialize in building responsive web applications that serve thousands of users daily, implementing DevOps practices, and ensuring quality through comprehensive testing. I believe in writing code that's not just functional, but elegant, maintainable, and scalable.</p>
+    </div>
+</section>
+
+<!-- Work Experience Timeline -->
+<section id="experience" class="section">
+    <div class="section-head animate-on-scroll">
+        <p class="eyebrow">Experience</p>
+        <h2>My professional journey</h2>
+    </div>
+    <div class="timeline">
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <div class="timeline-date">2023 - Till Now</div>
+                <h3 class="timeline-company">DOST Education</h3>
+                <div class="timeline-role">Full Stack Developer + DevOps Engineer</div>
+                <p class="timeline-description">Led development of call scheduling & automation platform with IVR + callback system, automating parent-student engagement at scale. Built responsive web applications serving thousands of users daily.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">PostgreSQL</span>
+                    <span class="tech-tag">AWS</span>
+                </div>
+            </div>
+            <div class="timeline-dot"></div>
+            <div></div>
+        </div>
+
+        <div class="timeline-item">
+            <div></div>
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+                <div class="timeline-date">2025 - Till Now</div>
+                <h3 class="timeline-company">MentorTogether</h3>
+                <div class="timeline-role">Full Stack Developer + QA Engineer</div>
+                <p class="timeline-description">Developed mentorship platform with mentorship, learning, messaging, communication, and admin portal. Implemented responsive design and accessibility features.</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">React</span>
+                    <span class="tech-tag">TypeScript</span>
+                    <span class="tech-tag">Tailwind CSS</span>
+                    <span class="tech-tag">REST API</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="timeline-item">
+            <div class="timeline-content">
+                <div class="timeline-date">2026</div>
+                <h3 class="timeline-company">To-be Added</h3>
+                <div class="timeline-role">To-be Added</div>
+                <p class="timeline-description">To-be Added</p>
+                <div class="tech-tags">
+                    <span class="tech-tag">To-be Added</span>
+                </div>
+            </div>
+            <div class="timeline-dot"></div>
+            <div></div>
+        </div>
     </div>
 </section>
 
 <section id="skills" class="section skills">
-    <div class="section-head">
+    <div class="section-head animate-on-scroll">
         <p class="eyebrow">Skills</p>
         <h2>Tools and technologies I work with daily.</h2>
     </div>
     <div class="skills-grid">
-        <article class="skill-card">
-            <h3>Frontend</h3>
-            <p>React, TypeScript, Next.js, Tailwind, accessibility-first UI.</p>
+        <article class="skill-card tilt-card animate-on-scroll">
+            <h3>Frontend Development</h3>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span>React & Next.js</span>
+                    <span>90%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-percentage="90"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span>TypeScript</span>
+                    <span>85%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-percentage="85"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span>HTML/CSS</span>
+                    <span>95%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-percentage="95"></div>
+                </div>
+            </div>
         </article>
-        <article class="skill-card">
-            <h3>Backend</h3>
-            <p>Node.js, Flask, REST APIs, authentication, database design.</p>
+
+        <article class="skill-card tilt-card animate-on-scroll">
+            <h3>Backend Development</h3>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span>Python & Flask</span>
+                    <span>88%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-percentage="88"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span>Node.js</span>
+                    <span>82%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-percentage="82"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span>REST APIs</span>
+                    <span>90%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-percentage="90"></div>
+                </div>
+            </div>
         </article>
-        <article class="skill-card">
-            <h3>UX &amp; UI</h3>
-            <p>Wireframes, component systems, motion, usability testing.</p>
+
+        <article class="skill-card tilt-card animate-on-scroll">
+            <h3>Database & DevOps</h3>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span>PostgreSQL & MongoDB</span>
+                    <span>85%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-percentage="85"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span>Docker & CI/CD</span>
+                    <span>75%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-percentage="75"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span>AWS & Vercel</span>
+                    <span>80%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-percentage="80"></div>
+                </div>
+            </div>
         </article>
-        <article class="skill-card">
-            <h3>Performance</h3>
-            <p>Core Web Vitals, lazy loading, caching, optimization.</p>
-        </article>
-        <article class="skill-card">
-            <h3>DevOps</h3>
-            <p>CI/CD, Vercel, Docker basics, monitoring.</p>
-        </article>
-        <article class="skill-card">
-            <h3>Collaboration</h3>
-            <p>Agile delivery, documentation, stakeholder alignment.</p>
+
+        <article class="skill-card tilt-card animate-on-scroll">
+            <h3>UX & Design</h3>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span>UI/UX Design</span>
+                    <span>80%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-percentage="80"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span>Figma</span>
+                    <span>75%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-percentage="75"></div>
+                </div>
+            </div>
+            <div class="skill-item">
+                <div class="skill-header">
+                    <span>Accessibility</span>
+                    <span>85%</span>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" data-percentage="85"></div>
+                </div>
+            </div>
         </article>
     </div>
 </section>
 
 <section id="projects" class="section projects">
-    <div class="section-head">
+    <div class="section-head animate-on-scroll">
         <p class="eyebrow">Projects</p>
         <h2>Selected work that balances craft and impact.</h2>
     </div>
+    
+    <!-- Project Filter -->
+    <div class="filter-container animate-on-scroll">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="education">Education</button>
+        <button class="filter-btn" data-filter="mentorship">Mentorship</button>
+    </div>
+
     <div class="projects-grid">
-        <article class="project-card">
+        <article class="project-card tilt-card animate-on-scroll" data-category="web education">
             <div class="project-meta">
                 <span>DOST Education</span>
-                <span>2021-2024</span>
+                <span>2023 - Present</span>
             </div>
-            <h3>Call scheduling &amp; automation platform</h3>
-            <p>IVR + callback system automating parent-student engagement at scale.</p>
-            <a class="text-link" href="{{ url_for('project_dost') }}">View case study</a>
+            <h3>Call Scheduling & Automation Platform</h3>
+            <p>Led development of IVR + callback system automating parent-student engagement at scale. Built responsive web applications serving thousands of users daily with Python, Flask, React, and AWS.</p>
+            <div class="project-stats">
+                <div class="project-stat">
+                    <i class="fas fa-users"></i>
+                    <span>10K+ Users</span>
+                </div>
+                <div class="project-stat">
+                    <i class="fas fa-chart-line"></i>
+                    <span>80% Efficiency</span>
+                </div>
+            </div>
+            <a class="text-link" href="{{ url_for('project_dost') }}">View case study →</a>
         </article>
-        <article class="project-card">
+
+        <article class="project-card tilt-card animate-on-scroll" data-category="web mentorship">
             <div class="project-meta">
-                <span>Healthcare Platform</span>
-                <span>2023</span>
+                <span>MentorTogether</span>
+                <span>2025 - Present</span>
             </div>
-            <h3>Patient engagement portal</h3>
-            <p>Responsive portal with scheduling, messaging, and records access.</p>
-            <a class="text-link" href="{{ url_for('projects') }}">View case study</a>
+            <h3>Mentorship Platform</h3>
+            <p>Developed comprehensive mentorship platform with learning modules, messaging system, communication tools, and admin portal. Implemented responsive design and accessibility features using React and TypeScript.</p>
+            <div class="project-stats">
+                <div class="project-stat">
+                    <i class="fas fa-user-friends"></i>
+                    <span>Mentorship</span>
+                </div>
+                <div class="project-stat">
+                    <i class="fas fa-comments"></i>
+                    <span>Real-time Chat</span>
+                </div>
+            </div>
+            <a class="text-link" href="{{ url_for('projects') }}">View case study →</a>
         </article>
-        <article class="project-card">
+
+        <article class="project-card tilt-card animate-on-scroll" data-category="web education">
             <div class="project-meta">
-                <span>Education SaaS</span>
-                <span>2023</span>
+                <span>Personal Project</span>
+                <span>2024</span>
             </div>
-            <h3>Learning management experience</h3>
-            <p>Modular learning flows and instructor tooling for scale.</p>
-            <a class="text-link" href="{{ url_for('projects') }}">View case study</a>
+            <h3>Portfolio Website</h3>
+            <p>Interactive portfolio showcasing work experience with modern animations, dark mode, contact form integration, and responsive design. Built with Flask, vanilla JavaScript, and custom CSS.</p>
+            <div class="project-stats">
+                <div class="project-stat">
+                    <i class="fas fa-palette"></i>
+                    <span>Modern UI</span>
+                </div>
+                <div class="project-stat">
+                    <i class="fas fa-mobile-alt"></i>
+                    <span>Responsive</span>
+                </div>
+            </div>
+            <a class="text-link" href="https://github.com/Sachinbisht27" target="_blank" rel="noopener noreferrer">View on GitHub →</a>
         </article>
     </div>
 </section>
 
-<section id="contact" class="section contact">
-    <div class="section-head">
-        <p class="eyebrow">Contact</p>
-        <h2>Let’s build something exceptional together.</h2>
+<!-- Achievements Section -->
+<section id="achievements" class="section">
+    <div class="section-head animate-on-scroll">
+        <p class="eyebrow">Achievements</p>
+        <h2>Recognition & Milestones</h2>
     </div>
-    <div class="contact-card">
+    <div class="content-grid">
+        <div class="content-card animate-on-scroll">
+            <span class="achievement-badge">⚡ Automation Expert</span>
+            <h3>Call Automation Platform</h3>
+            <p>Led development of IVR + callback system at DOST Education that reduced manual calling by 80% and improved parent-student engagement rates by 60%.</p>
+        </div>
+        <div class="content-card animate-on-scroll">
+            <span class="achievement-badge">👥 User Impact</span>
+            <h3>Serving Thousands Daily</h3>
+            <p>Built responsive web applications serving 10,000+ users daily across education and mentorship platforms with 99.9% uptime.</p>
+        </div>
+        <div class="content-card animate-on-scroll">
+            <span class="achievement-badge">🚀 Full Stack & DevOps</span>
+            <h3>End-to-End Development</h3>
+            <p>Expertise in full stack development with Python, Flask, React, TypeScript, and DevOps practices using AWS, PostgreSQL, and modern CI/CD pipelines.</p>
+        </div>
+    </div>
+</section>
+
+<section id="contact" class="section contact">
+    <div class="section-head animate-on-scroll">
+        <p class="eyebrow">Contact</p>
+        <h2>Let's build something exceptional together.</h2>
+    </div>
+    <div class="contact-card animate-on-scroll">
         <div>
             <h3>Start a conversation</h3>
-            <p>Share your goals, timeline, or a quick product idea. I’ll reply within 24 hours.</p>
+            <p>Share your goals, timeline, or a quick product idea. I'll reply within 24 hours.</p>
+            <div style="margin-top: 16px;">
+                <button class="copy-btn" data-copy="sachinbisht27@gmail.com">
+                    <i class="fas fa-envelope"></i>
+                    <span>sachinbisht27@gmail.com</span>
+                </button>
+            </div>
         </div>
         <div class="contact-actions">
-            <a class="btn primary" href="mailto:sachin@example.com">Email me</a>
+            <a class="btn primary" href="mailto:sachinbisht27@gmail.com">Email me</a>
             <a class="btn ghost" href="{{ url_for('resume') }}">Download resume</a>
         </div>
     </div>
