@@ -11,7 +11,7 @@ if (typingElement) {
 
     function type() {
         const currentRole = roles[roleIndex];
-        
+
         if (isDeleting) {
             typingElement.textContent = currentRole.substring(0, charIndex - 1);
             charIndex--;
@@ -50,10 +50,10 @@ if (darkModeToggle) {
     darkModeToggle.addEventListener('click', () => {
         const currentTheme = html.getAttribute('data-theme');
         const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
-        
+
         html.setAttribute('data-theme', newTheme);
         localStorage.setItem('theme', newTheme);
-        
+
         // Animate the toggle
         darkModeToggle.style.transform = 'rotate(360deg)';
         setTimeout(() => {
@@ -134,15 +134,15 @@ const projectCards = document.querySelectorAll('.project-card');
 filterButtons.forEach(button => {
     button.addEventListener('click', () => {
         const filter = button.getAttribute('data-filter');
-        
+
         // Update active button
         filterButtons.forEach(btn => btn.classList.remove('active'));
         button.classList.add('active');
-        
+
         // Filter projects
         projectCards.forEach(card => {
             const categories = card.getAttribute('data-category').split(' ');
-            
+
             if (filter === 'all' || categories.includes(filter)) {
                 card.style.display = 'grid';
                 setTimeout(() => {
@@ -167,23 +167,23 @@ const contactForm = document.getElementById('contactForm');
 if (contactForm) {
     contactForm.addEventListener('submit', async (e) => {
         e.preventDefault();
-        
+
         const submitBtn = contactForm.querySelector('.submit-btn');
         const originalText = submitBtn.textContent;
-        
+
         // Disable button and show loading
         submitBtn.disabled = true;
         submitBtn.textContent = 'Sending...';
         submitBtn.classList.add('loading');
-        
+
         // Get form data
         const formData = new FormData(contactForm);
         const data = Object.fromEntries(formData);
-        
+
         try {
             // Simulate form submission (replace with actual endpoint)
             await new Promise(resolve => setTimeout(resolve, 1500));
-            
+
             // Show success message
             showNotification('Message sent successfully! I\'ll get back to you soon.', 'success');
             contactForm.reset();
@@ -204,13 +204,13 @@ function showNotification(message, type = 'info') {
     const notification = document.createElement('div');
     notification.className = `notification notification-${type}`;
     notification.textContent = message;
-    
+
     document.body.appendChild(notification);
-    
+
     setTimeout(() => {
         notification.classList.add('show');
     }, 10);
-    
+
     setTimeout(() => {
         notification.classList.remove('show');
         setTimeout(() => {
@@ -241,16 +241,16 @@ tiltCards.forEach(card => {
         const rect = card.getBoundingClientRect();
         const x = e.clientX - rect.left;
         const y = e.clientY - rect.top;
-        
+
         const centerX = rect.width / 2;
         const centerY = rect.height / 2;
-        
+
         const rotateX = (y - centerY) / 10;
         const rotateY = (centerX - x) / 10;
-        
+
         card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale3d(1.02, 1.02, 1.02)`;
     });
-    
+
     card.addEventListener('mouseleave', () => {
         card.style.transform = 'perspective(1000px) rotateX(0) rotateY(0) scale3d(1, 1, 1)';
     });
@@ -282,12 +282,12 @@ window.addEventListener('mousemove', (e) => {
     const orbs = document.querySelectorAll('.bg-orb');
     const mouseX = e.clientX / window.innerWidth;
     const mouseY = e.clientY / window.innerHeight;
-    
+
     orbs.forEach((orb, index) => {
         const speed = (index + 1) * 20;
         const x = (mouseX - 0.5) * speed;
         const y = (mouseY - 0.5) * speed;
-        
+
         orb.style.transform = `translate(${x}px, ${y}px)`;
     });
 });
@@ -304,7 +304,7 @@ const statsObserver = new IntersectionObserver((entries) => {
             const duration = 2000;
             const increment = finalValue / (duration / 16);
             let current = 0;
-            
+
             const updateCounter = () => {
                 current += increment;
                 if (current < finalValue) {
@@ -314,7 +314,7 @@ const statsObserver = new IntersectionObserver((entries) => {
                     target.textContent = finalValue + '+';
                 }
             };
-            
+
             updateCounter();
             statsObserver.unobserve(target);
         }
