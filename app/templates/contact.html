@@ -16,7 +16,7 @@
     if (urlParams.get('success') === 'true') {
         const successBanner = document.createElement('div');
         successBanner.style.cssText = 'background: linear-gradient(135deg, #10b981, #059669); color: white; padding: 20px; text-align: center; border-radius: 12px; margin: 0 24px 20px; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);';
-        successBanner.innerHTML = '<h3 style="margin: 0 0 8px; font-size: 20px;">✅ Message Sent Successfully!</h3><p style="margin: 0;">Thank you for reaching out! I\'ll get back to you within 24 hours.</p>';
+        successBanner.innerHTML = '<h3 style="margin: 0 0 8px; font-size: 20px;">Message Sent Successfully!</h3><p style="margin: 0;">Thank you for reaching out! I\'ll get back to you within 24 hours.</p>';
         document.querySelector('.section').insertAdjacentElement('beforebegin', successBanner);
 
         // Remove success parameter from URL after 5 seconds

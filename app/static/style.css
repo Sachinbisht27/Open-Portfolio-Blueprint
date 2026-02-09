@@ -1067,14 +1067,32 @@ html {
     .timeline-item {
         grid-template-columns: 40px 1fr;
         gap: 20px;
+        margin-bottom: 40px;
     }
 
-    .timeline-content:nth-child(3) {
+    /* Hide empty spacer divs (divs that are not content or dot) */
+    .timeline-item>div:not(.timeline-content):not(.timeline-dot) {
+        display: none;
+    }
+
+    /* Ensure content is always in the second column */
+    .timeline-content {
         grid-column: 2;
+        grid-row: 1;
+        width: 100%;
     }
 
+    /* Ensure dot is always in the first column and centered */
     .timeline-dot {
-        margin: 0;
+        margin: 0 auto;
+        grid-column: 1;
+        grid-row: 1;
+        align-self: center;
+        /* Center vertically relative to content if needed, though usually top aligned is better for timeline */
+        align-self: start;
+        /* Keep it at the top to match the date/title start */
+        margin-top: 24px;
+        /* Align with the content top padding/margin */
     }
 
     .dark-mode-toggle {
