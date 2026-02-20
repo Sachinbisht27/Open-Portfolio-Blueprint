@@ -60,9 +60,9 @@ def projects() -> str:
     return flask.render_template("projects.html", page_name="projects")
 
 
-@app.route("/projects/dost")
-def project_dost() -> str:
-    return flask.render_template("project_dost.html", page_name="project_dost")
+@app.route("/projects/case-study")
+def case_study() -> str:
+    return flask.render_template("case_study.html", page_name="case_study")
 
 
 @app.route("/resume")
