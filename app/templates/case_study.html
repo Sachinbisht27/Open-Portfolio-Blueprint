@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+
+{% block content %}
+<section class="section page-hero">
+    <div>
+        <p class="eyebrow">{{ t('project_case.eyebrow') }}</p>
+        <h1>{{ site.case_study.title }}</h1>
+        <p class="lead">{{ site.case_study.lead }}</p>
+    </div>
+</section>
+
+<section class="section project-detail">
+    <div class="content-grid">
+        {% for section in site.case_study.sections %}
+            <article class="content-card">
+                <h2>{{ section.title }}</h2>
+                {% if section.get('body') %}
+                    <p>{{ section.get('body') }}</p>
+                {% endif %}
+
+                {% if section.get('items') %}
+                    <ul class="clean-list">
+                        {% for item in section.get('items') %}
+                            <li>{{ item }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </article>
+        {% endfor %}
+    </div>
+
+    <div class="content-cta">
+        <a class="btn primary" href="{{ lang_url('contact') }}">{{ t('project_case.primary_cta') }}</a>
+        <a class="btn ghost" href="{{ lang_url('projects') }}">{{ t('project_case.secondary_cta') }}</a>
+    </div>
+</section>
+{% endblock %}
