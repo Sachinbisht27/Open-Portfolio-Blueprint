@@ -501,6 +501,10 @@
       "action": "https://formsubmit.co/you@example.com",
       "subject": "New Portfolio Contact from Website",
       "success_redirect": ""
+    },
+    "quick_links": {
+      "linkedin": "https://www.linkedin.com/in/your-handle/",
+      "github": "https://github.com/your-handle"
     }
   },
   "resume": {

@@ -114,7 +114,7 @@
         <div class="content-card tilt-card animate-on-scroll">
             <h3>💼 {{ t('contact.quick.linkedin.title') }}</h3>
             <p>{{ t('contact.quick.linkedin.description') }}</p>
-            <a href="{{ site.social_links[1].url }}" target="_blank" rel="noopener noreferrer" class="btn ghost full-width-btn">
+            <a href="{{ social_url('linkedin') }}" target="_blank" rel="noopener noreferrer" class="btn ghost full-width-btn">
                 {{ t('contact.quick.linkedin.action') }}
             </a>
         </div>
@@ -130,7 +130,7 @@
         <div class="content-card tilt-card animate-on-scroll">
             <h3>💻 {{ t('contact.quick.github.title') }}</h3>
             <p>{{ t('contact.quick.github.description') }}</p>
-            <a href="{{ site.social_links[0].url }}" target="_blank" rel="noopener noreferrer" class="btn ghost full-width-btn">
+            <a href="{{ social_url('github') }}" target="_blank" rel="noopener noreferrer" class="btn ghost full-width-btn">
                 {{ t('contact.quick.github.action') }}
             </a>
         </div>

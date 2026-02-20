@@ -501,6 +501,10 @@
       "action": "https://formsubmit.co/sachinbisht27@gmail.com",
       "subject": "New Portfolio Contact from Website",
       "success_redirect": ""
+    },
+    "quick_links": {
+      "linkedin": "https://www.linkedin.com/in/sachin-bisht-080981158/",
+      "github": "https://github.com/Sachinbisht27"
     }
   },
   "resume": {
