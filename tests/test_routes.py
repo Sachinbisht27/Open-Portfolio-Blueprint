@@ -17,7 +17,7 @@ def client():
     [
         "/",
         "/projects",
-        "/projects/dost",
+        "/projects/case-study",
         "/contact",
         "/resume",
     ],
