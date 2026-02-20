@@ -3,12 +3,12 @@
     "description": "Configurable multilingual portfolio template built with Flask."
   },
   "person": {
-    "full_name": "Sachin Bisht",
-    "first_name": "Sachin",
-    "initials": "SB",
-    "email": "sachinbisht27@gmail.com",
-    "resume_email": "sachinbisht27@gmail.com",
-    "location": "Remote / India",
+    "full_name": "Your Name",
+    "first_name": "Your Name",
+    "initials": "YN",
+    "email": "you@example.com",
+    "resume_email": "you@example.com",
+    "location": "Remote / Your Location",
     "availability": {
       "en": "Available now",
       "hi": "अभी उपलब्ध",
@@ -17,7 +17,7 @@
       "mr": "आत्ता उपलब्ध",
       "es": "Disponible ahora",
       "ar": "متاح الآن",
-      "pt": "Disponivel agora"
+      "pt": "Disponível agora"
     }
   },
   "hero": {
@@ -116,13 +116,13 @@
       },
       "description": {
         "en": "From discovery to deployment, I translate ideas into polished, accessible, and fast experiences.",
-        "hi": "डिस्कवरी से डिप्लॉयमेंट तक, मैं आइडियाज को polished, accessible और तेज अनुभवों में बदलता हूं।",
-        "ta": "கண்டுபிடிப்பில் இருந்து வெளியீடு வரை, யோசனைகளை மேம்பட்ட மற்றும் அணுகக்கூடிய அனுபவங்களாக மாற்றுகிறேன்.",
-        "te": "డిస్కవరీ నుండి డిప్లాయ్‌మెంట్ వరకు, ఆలోచనలను శుభ్రంగా మరియు వేగవంతమైన అనుభవాలుగా మార్చుతాను.",
-        "mr": "डिस्कव्हरीपासून डिप्लॉयमेंटपर्यंत, कल्पना सुबक आणि वेगवान अनुभवांमध्ये रूपांतरित करतो.",
-        "es": "Desde el descubrimiento hasta el despliegue, convierto ideas en experiencias pulidas, accesibles y rapidas.",
-        "ar": "من الاكتشاف الى النشر، احوّل الافكار الى تجارب سريعة وسهلة الوصول.",
-        "pt": "Da descoberta ao deploy, transformo ideias em experiencias polidas, acessiveis e rapidas."
+        "hi": "डिस्कवरी से डिप्लॉयमेंट तक, मैं विचारों को परिष्कृत, सुलभ और तेज डिजिटल अनुभवों में बदलता हूं।",
+        "ta": "கண்டுபிடிப்பு முதல் வெளியீடு வரை, யோசனைகளை நயமாகவும் அணுகக்கூடியதாகவும் வேகமாகவும் உள்ள அனுபவங்களாக மாற்றுகிறேன்.",
+        "te": "డిస్కవరీ నుండి డిప్లాయ్‌మెంట్ వరకు, ఆలోచనలను మెరుగైన, అందుబాటులో ఉండే, వేగవంతమైన అనుభవాలుగా మారుస్తాను.",
+        "mr": "डिस्कव्हरीपासून डिप्लॉयमेंटपर्यंत, मी कल्पनांना सुबक, सुलभ आणि वेगवान डिजिटल अनुभवांमध्ये रूपांतरित करतो.",
+        "es": "Desde el descubrimiento hasta el despliegue, convierto ideas en experiencias pulidas, accesibles y rápidas.",
+        "ar": "من الاكتشاف إلى النشر، أحوّل الأفكار إلى تجارب متقنة وسريعة وسهلة الوصول.",
+        "pt": "Da descoberta ao deploy, transformo ideias em experiências refinadas, acessíveis e rápidas."
       }
     }
   },
@@ -130,47 +130,47 @@
     "paragraphs": [
       {
         "en": "I'm a full stack developer with 3+ years of experience building scalable web applications, automation systems, and internal platforms.",
-        "hi": "मैं 3+ वर्षों के अनुभव वाला फुल स्टैक डेवलपर हूं, जो scalable वेब एप्लिकेशन और ऑटोमेशन सिस्टम बनाता है।",
-        "ta": "நான் 3+ ஆண்டுகள் அனுபவம் கொண்ட முழு அடுக்கு டெவலப்பர்; அளவுரு செய்யக்கூடிய வலை பயன்பாடுகள் மற்றும் தானியக்க அமைப்புகளை உருவாக்குகிறேன்.",
-        "te": "నేను 3+ సంవత్సరాల అనుభవం కలిగిన ఫుల్ స్టాక్ డెవలపర్‌ని; స్కేలబుల్ వెబ్ అప్లికేషన్లు మరియు ఆటోమేషన్ సిస్టమ్స్ నిర్మిస్తాను.",
-        "mr": "मी 3+ वर्षांचा अनुभव असलेला फुल स्टॅक डेव्हलपर आहे; स्केलेबल वेब अॅप्स आणि ऑटोमेशन सिस्टम्स तयार करतो.",
-        "es": "Soy desarrollador full stack con mas de 3 anos de experiencia creando aplicaciones web escalables y sistemas de automatizacion.",
-        "ar": "انا مطوّر متكامل بخبرة تزيد عن 3 سنوات في بناء تطبيقات ويب قابلة للتوسع وانظمة اتمتة.",
-        "pt": "Sou desenvolvedor full stack com mais de 3 anos de experiencia construindo aplicacoes web escalaveis e sistemas de automacao."
+        "hi": "मैं 3+ वर्षों के अनुभव वाला फुल-स्टैक डेवलपर हूं, जो स्केलेबल वेब एप्लिकेशन, ऑटोमेशन सिस्टम और आंतरिक प्लेटफॉर्म बनाता है।",
+        "ta": "நான் 3+ ஆண்டுகள் அனுபவமுள்ள முழு அடுக்கு டெவலப்பர்; அளவுரு செய்யக்கூடிய வலை பயன்பாடுகள், தானியக்க அமைப்புகள் மற்றும் உள் தளங்களை உருவாக்குகிறேன்.",
+        "te": "నేను 3+ సంవత్సరాల అనుభవం కలిగిన ఫుల్ స్టాక్ డెవలపర్‌ను; స్కేలబుల్ వెబ్ అప్లికేషన్లు, ఆటోమేషన్ సిస్టమ్స్, మరియు ఇంటర్నల్ ప్లాట్‌ఫారమ్‌లను నిర్మిస్తాను.",
+        "mr": "मी 3+ वर्षांचा अनुभव असलेला फुल-स्टॅक डेव्हलपर आहे; स्केलेबल वेब अॅप्लिकेशन्स, ऑटोमेशन सिस्टिम्स आणि अंतर्गत प्लॅटफॉर्म तयार करतो.",
+        "es": "Soy desarrollador full stack con más de 3 años de experiencia creando aplicaciones web escalables, sistemas de automatización y plataformas internas.",
+        "ar": "أنا مطوّر متكامل بخبرة تزيد عن 3 سنوات في بناء تطبيقات ويب قابلة للتوسع وأنظمة أتمتة ومنصات داخلية.",
+        "pt": "Sou desenvolvedor full stack com mais de 3 anos de experiência construindo aplicações web escaláveis, sistemas de automação e plataformas internas."
       },
       {
         "en": "I work across Python, Flask, React, TypeScript, PostgreSQL, and cloud infrastructure, with a focus on reliability, accessibility, and delivery speed.",
-        "hi": "मैं Python, Flask, React, TypeScript, PostgreSQL और cloud infrastructure पर काम करता हूं, reliability और accessibility पर फोकस के साथ।",
-        "ta": "Python, Flask, React, TypeScript, PostgreSQL மற்றும் cloud அமைப்புகளுடன் நான் பணியாற்றுகிறேன்; நம்பகத்தன்மை மற்றும் அணுகல் மீது கவனம் செலுத்துகிறேன்.",
-        "te": "Python, Flask, React, TypeScript, PostgreSQL మరియు క్లౌడ్ ఇన్‌ఫ్రాతో పని చేస్తాను; నమ్మకత్వం మరియు యాక్సెసిబిలిటీపై దృష్టి.",
-        "mr": "मी Python, Flask, React, TypeScript, PostgreSQL आणि क्लाउड इन्फ्रासोबत काम करतो; विश्वासार्हता आणि accessibility वर भर देतो.",
-        "es": "Trabajo con Python, Flask, React, TypeScript, PostgreSQL e infraestructura cloud, priorizando confiabilidad, accesibilidad y velocidad.",
-        "ar": "اعمل على Python وFlask وReact وTypeScript وPostgreSQL والبنية السحابية مع تركيز على الاعتمادية وسهولة الوصول.",
-        "pt": "Trabalho com Python, Flask, React, TypeScript, PostgreSQL e infraestrutura em nuvem, com foco em confiabilidade e acessibilidade."
+        "hi": "मैं Python, Flask, React, TypeScript, PostgreSQL और क्लाउड इंफ्रास्ट्रक्चर पर काम करता हूं, और reliability, accessibility तथा delivery speed पर फोकस रखता हूं।",
+        "ta": "Python, Flask, React, TypeScript, PostgreSQL மற்றும் cloud infrastructure ஆகியவற்றில் பணியாற்றுகிறேன்; நம்பகத்தன்மை, அணுகல், மற்றும் வழங்கும் வேகம் ஆகியவற்றில் கவனம் செலுத்துகிறேன்.",
+        "te": "Python, Flask, React, TypeScript, PostgreSQL, మరియు క్లౌడ్ ఇన్‌ఫ్రాస్ట్రక్చర్‌తో పని చేస్తాను; నమ్మకత్వం, యాక్సెసిబిలిటీ, మరియు డెలివరీ వేగంపై దృష్టి పెడతాను.",
+        "mr": "मी Python, Flask, React, TypeScript, PostgreSQL आणि क्लाउड इन्फ्रास्ट्रक्चरसोबत काम करतो; विश्वासार्हता, accessibility आणि वितरणाचा वेग यांवर भर देतो.",
+        "es": "Trabajo con Python, Flask, React, TypeScript, PostgreSQL e infraestructura en la nube, con foco en confiabilidad, accesibilidad y velocidad de entrega.",
+        "ar": "أعمل على Python وFlask وReact وTypeScript وPostgreSQL والبنية السحابية، مع تركيز على الاعتمادية وسهولة الوصول وسرعة التسليم.",
+        "pt": "Trabalho com Python, Flask, React, TypeScript, PostgreSQL e infraestrutura em nuvem, com foco em confiabilidade, acessibilidade e velocidade de entrega."
       }
     ]
   },
   "social_links": [
     {
       "label": "GitHub",
-      "url": "https://github.com/Sachinbisht27",
+      "url": "https://github.com/your-handle",
       "icon": "fab fa-github"
     },
     {
       "label": "LinkedIn",
-      "url": "https://www.linkedin.com/in/sachin-bisht-080981158/",
+      "url": "https://www.linkedin.com/in/your-handle/",
       "icon": "fab fa-linkedin"
     },
     {
       "label": "Stack Overflow",
-      "url": "https://stackoverflow.com/users/19982527/sachin-bisht?tab=profile",
+      "url": "https://stackoverflow.com/users/your-id/your-handle",
       "icon": "fab fa-stack-overflow"
     }
   ],
   "experience": [
     {
       "period": "2023 - Present",
-      "company": "DOST Education",
+      "company": "Education Startup",
       "role": "Full Stack Developer + DevOps Engineer",
       "description": "Led development of a call scheduling and automation platform with IVR and callback workflows. Built responsive applications used daily by thousands of users.",
       "tech": [
@@ -183,7 +183,7 @@
     },
     {
       "period": "2025 - Present",
-      "company": "MentorTogether",
+      "company": "Mentorship Platform",
       "role": "Full Stack Developer + QA Engineer",
       "description": "Developing a mentorship platform with learning modules, messaging workflows, and an admin portal while maintaining quality and accessibility standards.",
       "tech": [
@@ -317,7 +317,7 @@
         "web",
         "education"
       ],
-      "company": "DOST Education",
+      "company": "Education Startup",
       "period": "2023 - Present",
       "title": "Call Scheduling & Automation Platform",
       "description": "Led development of an IVR + callback system that automated parent-student engagement workflows and improved campaign operations.",
@@ -333,7 +333,7 @@
       ],
       "link": {
         "type": "internal",
-        "endpoint": "project_dost",
+        "endpoint": "case_study",
         "label": {
           "en": "View case study",
           "hi": "केस स्टडी देखें",
@@ -351,7 +351,7 @@
         "web",
         "mentorship"
       ],
-      "company": "MentorTogether",
+      "company": "Mentorship Platform",
       "period": "2025 - Present",
       "title": "Mentorship Platform",
       "description": "Developed a mentorship platform with learning workflows, communication modules, and admin tooling using React and TypeScript.",
@@ -401,7 +401,7 @@
       ],
       "link": {
         "type": "external",
-        "url": "https://github.com/Sachinbisht27",
+        "url": "https://github.com/your-handle",
         "label": {
           "en": "View on GitHub",
           "hi": "GitHub पर देखें",
@@ -418,13 +418,13 @@
   "projects_page": {
     "projects": [
       {
-        "company": "DOST Education",
+        "company": "Education Startup",
         "period": "2021 - 2024",
         "title": "Call scheduling and automation platform",
         "description": "IVR + callback system automating parent-student engagement at scale.",
         "link": {
           "type": "internal",
-          "endpoint": "project_dost",
+          "endpoint": "case_study",
           "label": {
             "en": "Read full case study",
             "hi": "पूरा केस स्टडी पढ़ें",
@@ -498,16 +498,16 @@
   ],
   "contact": {
     "form": {
-      "action": "https://formsubmit.co/sachinbisht27@gmail.com",
+      "action": "https://formsubmit.co/you@example.com",
       "subject": "New Portfolio Contact from Website",
       "success_redirect": ""
     }
   },
   "resume": {
-    "email": "sachinbisht27@gmail.com"
+    "email": "you@example.com"
   },
   "case_study": {
-    "title": "DOST Education: Call Scheduling and Automation Platform",
+    "title": "Sample Case Study: Call Scheduling and Automation Platform",
     "lead": "Over three years, I grew from intern to lead developer, delivering a mission-critical platform that automates student-parent communication through IVR and callbacks.",
     "sections": [
       {
