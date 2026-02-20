@@ -83,6 +83,8 @@ def add_response_headers(response: flask.Response) -> flask.Response:
         selected_language,
         max_age=60 * 60 * 24 * 365,
         samesite="Lax",
+        httponly=True,
+        secure=request.is_secure,
     )
 
     response.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
