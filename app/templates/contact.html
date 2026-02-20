@@ -16,7 +16,12 @@
         const successDescription = {{ t('contact.success.description') | tojson }};
         const successBanner = document.createElement('div');
         successBanner.className = 'success-banner';
-        successBanner.innerHTML = `<h3>${successTitle}</h3><p>${successDescription}</p>`;
+        const successTitleElement = document.createElement('h3');
+        successTitleElement.textContent = successTitle;
+        const successDescriptionElement = document.createElement('p');
+        successDescriptionElement.textContent = successDescription;
+        successBanner.appendChild(successTitleElement);
+        successBanner.appendChild(successDescriptionElement);
 
         const heroSection = document.querySelector('.page-hero');
         if (heroSection) {

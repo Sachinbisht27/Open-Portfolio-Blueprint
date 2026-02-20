@@ -83,9 +83,14 @@ def add_response_headers(response: flask.Response) -> flask.Response:
         selected_language,
         max_age=60 * 60 * 24 * 365,
         samesite="Lax",
+        httponly=True,
+        secure=request.is_secure,
     )
 
-    response.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
-    response.headers["Pragma"] = "no-cache"
-    response.headers["Expires"] = "0"
+    # Apply strict no-cache headers only to HTML responses to avoid
+    # disabling caching for static assets such as CSS/JS/images.
+    if response.mimetype == "text/html":
+        response.headers["Cache-Control"] = "no-cache, no-store, must-revalidate"
+        response.headers["Pragma"] = "no-cache"
+        response.headers["Expires"] = "0"
     return response
