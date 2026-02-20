@@ -3,7 +3,7 @@
     "titles": {
       "home": "Inicio",
       "projects": "Projetos",
-      "project_dost": "Estudo de caso",
+      "case_study": "Estudo de caso",
       "contact": "Contato",
       "resume": "Curriculo"
     }
@@ -30,15 +30,15 @@
     },
     "sending": "Enviando...",
     "copy_email": "Copiar email",
-    "copied": "Copiado para a area de transferencia!",
+    "copied": "Copiado para a área de transferência!",
     "notification_error": "Algo deu errado. Tente novamente.",
     "available_now": "Disponivel agora"
   },
   "home": {
     "hero": {
       "headline": "Oi, eu sou {name}.",
-      "subheadline": "Construo experiencias web cuidadosas e de alta performance.",
-      "description": "Projeto e entrego sites e apps responsivos com arquitetura limpa, boa UI e sistemas escalaveis.",
+      "subheadline": "Construo experiências web cuidadosas e de alta performance.",
+      "description": "Projeto e entrego sites e aplicações web responsivas com arquitetura limpa, ótima UI e sistemas escaláveis.",
       "actions": {
         "work": "Vamos trabalhar juntos",
         "projects": "Ver projetos"
@@ -92,7 +92,7 @@
   "contact": {
     "eyebrow": "Contato",
     "heading": "Vamos criar algo incrivel juntos.",
-    "lead": "Tem um projeto em mente? Quer colaborar? Vou adorar falar com voce.",
+    "lead": "Tem um projeto em mente? Quer colaborar? Vou adorar falar com você.",
     "form": {
       "name": "Seu nome",
       "email": "Endereco de email",
@@ -135,7 +135,7 @@
   "resume": {
     "eyebrow": "Curriculo",
     "heading": "Obtenha meu curriculo completo.",
-    "lead": "Precisa de um CV detalhado? Posso compartilhar um PDF com referencias e resumo de projetos recentes.",
+    "lead": "Precisa de um CV detalhado? Posso compartilhar um PDF com referências e resumos de projetos recentes.",
     "card_title": "Solicite a versao mais recente",
     "card_description": "Envie uma mensagem rapida e eu retorno com o curriculo e links do portfolio.",
     "email_action": "Pedir por email",
