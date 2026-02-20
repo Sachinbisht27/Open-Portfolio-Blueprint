@@ -3,21 +3,21 @@
 {% block content %}
 <section class="section page-hero">
     <div>
-        <p class="eyebrow">Resume</p>
-        <h1>Get my full resume.</h1>
-        <p class="lead">Need a detailed CV? I can share a PDF along with references and recent project summaries.</p>
+        <p class="eyebrow">{{ t('resume.eyebrow') }}</p>
+        <h1>{{ t('resume.heading') }}</h1>
+        <p class="lead">{{ t('resume.lead') }}</p>
     </div>
 </section>
 
 <section class="section">
     <div class="contact-card resume-card">
         <div>
-            <h3>Request the latest version</h3>
-            <p>Send a quick note and I’ll reply with the most recent resume and portfolio links.</p>
+            <h3>{{ t('resume.card_title') }}</h3>
+            <p>{{ t('resume.card_description') }}</p>
         </div>
         <div class="contact-actions">
-            <a class="btn primary" href="mailto:sachin@example.com">Email for resume</a>
-            <a class="btn ghost" href="{{ url_for('home') }}#home">Back to home</a>
+            <a class="btn primary" href="mailto:{{ site.resume.email }}">{{ t('resume.email_action') }}</a>
+            <a class="btn ghost" href="{{ lang_url('home') }}#home">{{ t('resume.home_action') }}</a>
         </div>
     </div>
 </section>

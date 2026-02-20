@@ -1,0 +1,553 @@
+{
+  "meta": {
+    "description": "Configurable multilingual portfolio template built with Flask."
+  },
+  "person": {
+    "full_name": "Your Name",
+    "first_name": "Your Name",
+    "initials": "YN",
+    "email": "you@example.com",
+    "resume_email": "you@example.com",
+    "location": "Remote / Your Location",
+    "availability": {
+      "en": "Available now",
+      "hi": "अभी उपलब्ध",
+      "ta": "இப்போது கிடைக்கிறது",
+      "te": "ప్రస్తుతం అందుబాటులో",
+      "mr": "आत्ता उपलब्ध",
+      "es": "Disponible ahora",
+      "ar": "متاح الآن",
+      "pt": "Disponível agora"
+    }
+  },
+  "hero": {
+    "roles": [
+      {
+        "en": "Full Stack Developer",
+        "hi": "फुल स्टैक डेवलपर",
+        "ta": "முழு அடுக்கு டெவலப்பர்",
+        "te": "ఫుల్ స్టాక్ డెవలపర్",
+        "mr": "फुल स्टॅक डेव्हलपर",
+        "es": "Desarrollador Full Stack",
+        "ar": "مطوّر متكامل",
+        "pt": "Desenvolvedor Full Stack"
+      },
+      {
+        "en": "UI/UX Enthusiast",
+        "hi": "यूआई/यूएक्स उत्साही",
+        "ta": "UI/UX ஆர்வலர்",
+        "te": "UI/UX ఆసక్తి గల వ్యక్తి",
+        "mr": "UI/UX उत्साही",
+        "es": "Entusiasta de UI/UX",
+        "ar": "مهتم بتجربة المستخدم",
+        "pt": "Entusiasta de UI/UX"
+      },
+      {
+        "en": "Problem Solver",
+        "hi": "समस्या समाधानकर्ता",
+        "ta": "சிக்கல் தீர்க்கும் நிபுணர்",
+        "te": "సమస్య పరిష్కర్త",
+        "mr": "समस्या सोडवणारा",
+        "es": "Solucionador de problemas",
+        "ar": "محلل للمشكلات",
+        "pt": "Solucionador de problemas"
+      },
+      {
+        "en": "Tech Innovator",
+        "hi": "टेक इनोवेटर",
+        "ta": "தொழில்நுட்ப புதுமையாளர்",
+        "te": "టెక్ ఇన్నోవేటర్",
+        "mr": "टेक इनोव्हेटर",
+        "es": "Innovador tecnologico",
+        "ar": "مبتكر تقني",
+        "pt": "Inovador em tecnologia"
+      }
+    ],
+    "stats": [
+      {
+        "value": 3,
+        "suffix": "+",
+        "label": {
+          "en": "Years building web products",
+          "hi": "वेब प्रोडक्ट बनाने का अनुभव",
+          "ta": "இணைய தயாரிப்புகள் உருவாக்கிய ஆண்டுகள்",
+          "te": "వెబ్ ఉత్పత్తులు రూపొందించిన అనుభవ సంవత్సరాలు",
+          "mr": "वेब उत्पादन निर्मितीचा अनुभव",
+          "es": "Anos creando productos web",
+          "ar": "سنوات في بناء منتجات الويب",
+          "pt": "Anos construindo produtos web"
+        }
+      },
+      {
+        "value": 5,
+        "suffix": "+",
+        "label": {
+          "en": "Projects worked on",
+          "hi": "किए गए प्रोजेक्ट",
+          "ta": "பணிபுரிந்த திட்டங்கள்",
+          "te": "పని చేసిన ప్రాజెక్టులు",
+          "mr": "काम केलेले प्रकल्प",
+          "es": "Proyectos realizados",
+          "ar": "المشاريع المنجزة",
+          "pt": "Projetos desenvolvidos"
+        }
+      }
+    ],
+    "card": {
+      "badge": {
+        "en": "Available for freelance",
+        "hi": "फ्रीलांस के लिए उपलब्ध",
+        "ta": "ஃப்ரீலான்ஸுக்கு கிடைக்கிறது",
+        "te": "ఫ్రీలాన్స్ కోసం అందుబాటులో",
+        "mr": "फ्रीलान्ससाठी उपलब्ध",
+        "es": "Disponible para freelance",
+        "ar": "متاح للعمل الحر",
+        "pt": "Disponivel para freelance"
+      },
+      "title": {
+        "en": "Product-minded engineering",
+        "hi": "प्रोडक्ट सोच वाली इंजीनियरिंग",
+        "ta": "தயாரிப்பு மனப்பாங்குள்ள பொறியியல்",
+        "te": "ప్రోడక్ట్ దృష్టితో ఇంజినీరింగ్",
+        "mr": "प्रॉडक्ट-केंद्रित इंजिनिअरिंग",
+        "es": "Ingenieria orientada al producto",
+        "ar": "هندسة موجّهة للمنتج",
+        "pt": "Engenharia orientada a produto"
+      },
+      "description": {
+        "en": "From discovery to deployment, I translate ideas into polished, accessible, and fast experiences.",
+        "hi": "डिस्कवरी से डिप्लॉयमेंट तक, मैं विचारों को परिष्कृत, सुलभ और तेज डिजिटल अनुभवों में बदलता हूं।",
+        "ta": "கண்டுபிடிப்பு முதல் வெளியீடு வரை, யோசனைகளை நயமாகவும் அணுகக்கூடியதாகவும் வேகமாகவும் உள்ள அனுபவங்களாக மாற்றுகிறேன்.",
+        "te": "డిస్కవరీ నుండి డిప్లాయ్‌మెంట్ వరకు, ఆలోచనలను మెరుగైన, అందుబాటులో ఉండే, వేగవంతమైన అనుభవాలుగా మారుస్తాను.",
+        "mr": "डिस्कव्हरीपासून डिप्लॉयमेंटपर्यंत, मी कल्पनांना सुबक, सुलभ आणि वेगवान डिजिटल अनुभवांमध्ये रूपांतरित करतो.",
+        "es": "Desde el descubrimiento hasta el despliegue, convierto ideas en experiencias pulidas, accesibles y rápidas.",
+        "ar": "من الاكتشاف إلى النشر، أحوّل الأفكار إلى تجارب متقنة وسريعة وسهلة الوصول.",
+        "pt": "Da descoberta ao deploy, transformo ideias em experiências refinadas, acessíveis e rápidas."
+      }
+    }
+  },
+  "about": {
+    "paragraphs": [
+      {
+        "en": "I'm a full stack developer with 3+ years of experience building scalable web applications, automation systems, and internal platforms.",
+        "hi": "मैं 3+ वर्षों के अनुभव वाला फुल-स्टैक डेवलपर हूं, जो स्केलेबल वेब एप्लिकेशन, ऑटोमेशन सिस्टम और आंतरिक प्लेटफॉर्म बनाता है।",
+        "ta": "நான் 3+ ஆண்டுகள் அனுபவமுள்ள முழு அடுக்கு டெவலப்பர்; அளவுரு செய்யக்கூடிய வலை பயன்பாடுகள், தானியக்க அமைப்புகள் மற்றும் உள் தளங்களை உருவாக்குகிறேன்.",
+        "te": "నేను 3+ సంవత్సరాల అనుభవం కలిగిన ఫుల్ స్టాక్ డెవలపర్‌ను; స్కేలబుల్ వెబ్ అప్లికేషన్లు, ఆటోమేషన్ సిస్టమ్స్, మరియు ఇంటర్నల్ ప్లాట్‌ఫారమ్‌లను నిర్మిస్తాను.",
+        "mr": "मी 3+ वर्षांचा अनुभव असलेला फुल-स्टॅक डेव्हलपर आहे; स्केलेबल वेब अॅप्लिकेशन्स, ऑटोमेशन सिस्टिम्स आणि अंतर्गत प्लॅटफॉर्म तयार करतो.",
+        "es": "Soy desarrollador full stack con más de 3 años de experiencia creando aplicaciones web escalables, sistemas de automatización y plataformas internas.",
+        "ar": "أنا مطوّر متكامل بخبرة تزيد عن 3 سنوات في بناء تطبيقات ويب قابلة للتوسع وأنظمة أتمتة ومنصات داخلية.",
+        "pt": "Sou desenvolvedor full stack com mais de 3 anos de experiência construindo aplicações web escaláveis, sistemas de automação e plataformas internas."
+      },
+      {
+        "en": "I work across Python, Flask, React, TypeScript, PostgreSQL, and cloud infrastructure, with a focus on reliability, accessibility, and delivery speed.",
+        "hi": "मैं Python, Flask, React, TypeScript, PostgreSQL और क्लाउड इंफ्रास्ट्रक्चर पर काम करता हूं, और reliability, accessibility तथा delivery speed पर फोकस रखता हूं।",
+        "ta": "Python, Flask, React, TypeScript, PostgreSQL மற்றும் cloud infrastructure ஆகியவற்றில் பணியாற்றுகிறேன்; நம்பகத்தன்மை, அணுகல், மற்றும் வழங்கும் வேகம் ஆகியவற்றில் கவனம் செலுத்துகிறேன்.",
+        "te": "Python, Flask, React, TypeScript, PostgreSQL, మరియు క్లౌడ్ ఇన్‌ఫ్రాస్ట్రక్చర్‌తో పని చేస్తాను; నమ్మకత్వం, యాక్సెసిబిలిటీ, మరియు డెలివరీ వేగంపై దృష్టి పెడతాను.",
+        "mr": "मी Python, Flask, React, TypeScript, PostgreSQL आणि क्लाउड इन्फ्रास्ट्रक्चरसोबत काम करतो; विश्वासार्हता, accessibility आणि वितरणाचा वेग यांवर भर देतो.",
+        "es": "Trabajo con Python, Flask, React, TypeScript, PostgreSQL e infraestructura en la nube, con foco en confiabilidad, accesibilidad y velocidad de entrega.",
+        "ar": "أعمل على Python وFlask وReact وTypeScript وPostgreSQL والبنية السحابية، مع تركيز على الاعتمادية وسهولة الوصول وسرعة التسليم.",
+        "pt": "Trabalho com Python, Flask, React, TypeScript, PostgreSQL e infraestrutura em nuvem, com foco em confiabilidade, acessibilidade e velocidade de entrega."
+      }
+    ]
+  },
+  "social_links": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/your-handle",
+      "icon": "fab fa-github"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/your-handle/",
+      "icon": "fab fa-linkedin"
+    },
+    {
+      "label": "Stack Overflow",
+      "url": "https://stackoverflow.com/users/your-id/your-handle",
+      "icon": "fab fa-stack-overflow"
+    }
+  ],
+  "experience": [
+    {
+      "period": "2023 - Present",
+      "company": "Education Startup",
+      "role": "Full Stack Developer + DevOps Engineer",
+      "description": "Led development of a call scheduling and automation platform with IVR and callback workflows. Built responsive applications used daily by thousands of users.",
+      "tech": [
+        "Python",
+        "Flask",
+        "React",
+        "PostgreSQL",
+        "AWS"
+      ]
+    },
+    {
+      "period": "2025 - Present",
+      "company": "Mentorship Platform",
+      "role": "Full Stack Developer + QA Engineer",
+      "description": "Developing a mentorship platform with learning modules, messaging workflows, and an admin portal while maintaining quality and accessibility standards.",
+      "tech": [
+        "React",
+        "TypeScript",
+        "Tailwind CSS",
+        "REST API"
+      ]
+    },
+    {
+      "period": "2026",
+      "company": "Next Opportunity",
+      "role": "Open for impactful teams",
+      "description": "Looking for product-focused teams where engineering quality and user outcomes are equally valued.",
+      "tech": [
+        "Architecture",
+        "Scale",
+        "Leadership"
+      ]
+    }
+  ],
+  "skill_groups": [
+    {
+      "title": {
+        "en": "Frontend Development",
+        "hi": "फ्रंटएंड डेवलपमेंट",
+        "ta": "முன்தள மேம்பாடு",
+        "te": "ఫ్రంట్‌ఎండ్ అభివృద్ధి",
+        "mr": "फ्रंटएंड डेव्हलपमेंट",
+        "es": "Desarrollo Frontend",
+        "ar": "تطوير الواجهة الامامية",
+        "pt": "Desenvolvimento Frontend"
+      },
+      "skills": [
+        {
+          "name": "React & Next.js",
+          "level": 90
+        },
+        {
+          "name": "TypeScript",
+          "level": 85
+        },
+        {
+          "name": "HTML/CSS",
+          "level": 95
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Backend Development",
+        "hi": "बैकएंड डेवलपमेंट",
+        "ta": "பின்தள மேம்பாடு",
+        "te": "బ్యాక్‌ఎండ్ అభివృద్ధి",
+        "mr": "बॅकएंड डेव्हलपमेंट",
+        "es": "Desarrollo Backend",
+        "ar": "تطوير الواجهة الخلفية",
+        "pt": "Desenvolvimento Backend"
+      },
+      "skills": [
+        {
+          "name": "Python & Flask",
+          "level": 88
+        },
+        {
+          "name": "Node.js",
+          "level": 82
+        },
+        {
+          "name": "REST APIs",
+          "level": 90
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "Database & DevOps",
+        "hi": "डेटाबेस और डेवऑप्स",
+        "ta": "தரவுத்தளம் மற்றும் DevOps",
+        "te": "డేటాబేస్ మరియు DevOps",
+        "mr": "डेटाबेस आणि DevOps",
+        "es": "Base de datos y DevOps",
+        "ar": "قواعد البيانات وDevOps",
+        "pt": "Banco de dados e DevOps"
+      },
+      "skills": [
+        {
+          "name": "PostgreSQL & MongoDB",
+          "level": 85
+        },
+        {
+          "name": "Docker & CI/CD",
+          "level": 75
+        },
+        {
+          "name": "AWS & Vercel",
+          "level": 80
+        }
+      ]
+    },
+    {
+      "title": {
+        "en": "UX & Design",
+        "hi": "यूएक्स और डिजाइन",
+        "ta": "UX மற்றும் வடிவமைப்பு",
+        "te": "UX మరియు డిజైన్",
+        "mr": "UX आणि डिझाइन",
+        "es": "UX y Diseno",
+        "ar": "تجربة المستخدم والتصميم",
+        "pt": "UX e Design"
+      },
+      "skills": [
+        {
+          "name": "UI/UX Design",
+          "level": 80
+        },
+        {
+          "name": "Figma",
+          "level": 75
+        },
+        {
+          "name": "Accessibility",
+          "level": 85
+        }
+      ]
+    }
+  ],
+  "featured_projects": [
+    {
+      "categories": [
+        "web",
+        "education"
+      ],
+      "company": "Education Startup",
+      "period": "2023 - Present",
+      "title": "Call Scheduling & Automation Platform",
+      "description": "Led development of an IVR + callback system that automated parent-student engagement workflows and improved campaign operations.",
+      "stats": [
+        {
+          "icon": "fas fa-users",
+          "label": "10K+ Users"
+        },
+        {
+          "icon": "fas fa-chart-line",
+          "label": "80% Efficiency"
+        }
+      ],
+      "link": {
+        "type": "internal",
+        "endpoint": "case_study",
+        "label": {
+          "en": "View case study",
+          "hi": "केस स्टडी देखें",
+          "ta": "கேஸ் ஸ்டடியை பார்க்கவும்",
+          "te": "కేస్ స్టడీ చూడండి",
+          "mr": "केस स्टडी पहा",
+          "es": "Ver caso de estudio",
+          "ar": "عرض دراسة الحالة",
+          "pt": "Ver estudo de caso"
+        }
+      }
+    },
+    {
+      "categories": [
+        "web",
+        "mentorship"
+      ],
+      "company": "Mentorship Platform",
+      "period": "2025 - Present",
+      "title": "Mentorship Platform",
+      "description": "Developed a mentorship platform with learning workflows, communication modules, and admin tooling using React and TypeScript.",
+      "stats": [
+        {
+          "icon": "fas fa-user-friends",
+          "label": "Mentorship"
+        },
+        {
+          "icon": "fas fa-comments",
+          "label": "Real-time Chat"
+        }
+      ],
+      "link": {
+        "type": "internal",
+        "endpoint": "projects",
+        "label": {
+          "en": "View portfolio projects",
+          "hi": "पोर्टफोलियो प्रोजेक्ट देखें",
+          "ta": "போர்ட்ஃபோலியோ திட்டங்களைப் பார்க்கவும்",
+          "te": "పోర్ట్‌ఫోలియో ప్రాజెక్టులు చూడండి",
+          "mr": "पोर्टफोलिओ प्रकल्प पहा",
+          "es": "Ver proyectos del portafolio",
+          "ar": "عرض مشاريع الملف الشخصي",
+          "pt": "Ver projetos do portfolio"
+        }
+      }
+    },
+    {
+      "categories": [
+        "web",
+        "education"
+      ],
+      "company": "Personal Project",
+      "period": "2024",
+      "title": "Portfolio Website",
+      "description": "Interactive portfolio showcasing experience with dark mode, multilingual support, responsive layout, and reusable architecture.",
+      "stats": [
+        {
+          "icon": "fas fa-palette",
+          "label": "Modern UI"
+        },
+        {
+          "icon": "fas fa-mobile-alt",
+          "label": "Responsive"
+        }
+      ],
+      "link": {
+        "type": "external",
+        "url": "https://github.com/your-handle",
+        "label": {
+          "en": "View on GitHub",
+          "hi": "GitHub पर देखें",
+          "ta": "GitHub-இல் பார்க்கவும்",
+          "te": "GitHub లో చూడండి",
+          "mr": "GitHub वर पहा",
+          "es": "Ver en GitHub",
+          "ar": "عرض على GitHub",
+          "pt": "Ver no GitHub"
+        }
+      }
+    }
+  ],
+  "projects_page": {
+    "projects": [
+      {
+        "company": "Education Startup",
+        "period": "2021 - 2024",
+        "title": "Call scheduling and automation platform",
+        "description": "IVR + callback system automating parent-student engagement at scale.",
+        "link": {
+          "type": "internal",
+          "endpoint": "case_study",
+          "label": {
+            "en": "Read full case study",
+            "hi": "पूरा केस स्टडी पढ़ें",
+            "ta": "முழு கேஸ் ஸ்டடியை படிக்கவும்",
+            "te": "పూర్తి కేస్ స్టడీ చదవండి",
+            "mr": "संपूर्ण केस स्टडी वाचा",
+            "es": "Leer caso completo",
+            "ar": "اقرا دراسة الحالة الكاملة",
+            "pt": "Ler estudo de caso completo"
+          }
+        }
+      },
+      {
+        "company": "Healthcare Platform",
+        "period": "2023",
+        "title": "Patient engagement portal",
+        "description": "Responsive portal with scheduling, messaging, and records access.",
+        "link": {
+          "type": "internal",
+          "endpoint": "contact",
+          "label": {
+            "en": "Request details",
+            "hi": "विवरण मांगें",
+            "ta": "விவரங்களை கோருங்கள்",
+            "te": "వివరాలు కోరండి",
+            "mr": "तपशील मागवा",
+            "es": "Solicitar detalles",
+            "ar": "طلب التفاصيل",
+            "pt": "Solicitar detalhes"
+          }
+        }
+      },
+      {
+        "company": "Education SaaS",
+        "period": "2023",
+        "title": "Learning management experience",
+        "description": "Modular learning flows and instructor tooling designed for scale.",
+        "link": {
+          "type": "internal",
+          "endpoint": "contact",
+          "label": {
+            "en": "Request details",
+            "hi": "विवरण मांगें",
+            "ta": "விவரங்களை கோருங்கள்",
+            "te": "వివరాలు కోరండి",
+            "mr": "तपशील मागवा",
+            "es": "Solicitar detalles",
+            "ar": "طلب التفاصيل",
+            "pt": "Solicitar detalhes"
+          }
+        }
+      }
+    ]
+  },
+  "achievements": [
+    {
+      "badge": "Automation Expert",
+      "title": "Call automation platform",
+      "description": "Led delivery of an IVR + callback platform that reduced manual calling workload and improved parent engagement outcomes."
+    },
+    {
+      "badge": "User Impact",
+      "title": "Serving thousands daily",
+      "description": "Built responsive products serving thousands of users across education and mentorship workflows with high reliability."
+    },
+    {
+      "badge": "Full Stack + DevOps",
+      "title": "End-to-end ownership",
+      "description": "Hands-on ownership across backend, frontend, data, CI/CD, and production observability."
+    }
+  ],
+  "contact": {
+    "form": {
+      "action": "https://formsubmit.co/you@example.com",
+      "subject": "New Portfolio Contact from Website",
+      "success_redirect": ""
+    },
+    "quick_links": {
+      "linkedin": "https://www.linkedin.com/in/your-handle/",
+      "github": "https://github.com/your-handle"
+    }
+  },
+  "resume": {
+    "email": "you@example.com"
+  },
+  "case_study": {
+    "title": "Sample Case Study: Call Scheduling and Automation Platform",
+    "lead": "Over three years, I grew from intern to lead developer, delivering a mission-critical platform that automates student-parent communication through IVR and callbacks.",
+    "sections": [
+      {
+        "title": "Motivation",
+        "body": "The project reduced manual effort in high-volume calling operations and improved response rates through smarter callback workflows."
+      },
+      {
+        "title": "Technical Architecture",
+        "items": [
+          "Hybrid cloud architecture on Google Cloud Platform for high-volume concurrent IVR calls.",
+          "Admin dashboard with Python backend for scheduling, retries, and missed-call workflows.",
+          "Secure webhook integrations with Exotel and KooKoo for real-time event processing.",
+          "Microservices for scheduling, missed-call handling, and webhook processing.",
+          "PostgreSQL for transactional data with ETL pipelines into BigQuery.",
+          "Looker Studio dashboards powered by curated scheduled queries.",
+          "CI/CD pipelines via GitHub Actions to Cloud Run and Cloud Functions.",
+          "Operational alerting with Cloud Scheduler notifications to Slack and email."
+        ]
+      },
+      {
+        "title": "My Contributions",
+        "items": [
+          "Led system architecture and designed the complete CI/CD pipeline.",
+          "Built the scheduling engine, secure webhook handlers, and query optimizations.",
+          "Introduced monitoring, alerting, and auto-retry mechanisms for traffic spikes.",
+          "Mentored junior engineers and owned production release cycles."
+        ]
+      },
+      {
+        "title": "Scale and Impact",
+        "items": [
+          "90,000+ active users and 600,000 total platform users.",
+          "Reduced manual operations workload by around 70%.",
+          "Improved callback success rates with automated workflows."
+        ]
+      }
+    ]
+  }
+}

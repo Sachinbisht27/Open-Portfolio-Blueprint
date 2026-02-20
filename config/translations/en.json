@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "titles": {
+      "home": "Home",
+      "projects": "Projects",
+      "case_study": "Case Study",
+      "contact": "Contact",
+      "resume": "Resume"
+    }
+  },
+  "common": {
+    "skip_to_content": "Skip to content",
+    "theme_toggle": "Toggle dark mode",
+    "light_mode": "Switch to light mode",
+    "dark_mode": "Switch to dark mode",
+    "language": "Language",
+    "nav_toggle": "Toggle navigation",
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "skills": "Skills",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "footer": "© {year} {name}. Built to be forked and customized.",
+    "footer_links": {
+      "about": "About",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "sending": "Sending...",
+    "copy_email": "Copy email",
+    "copied": "Copied to clipboard!",
+    "notification_error": "Something went wrong. Please try again.",
+    "available_now": "Available now"
+  },
+  "home": {
+    "hero": {
+      "headline": "Hi, I'm {name}.",
+      "subheadline": "Building thoughtful, high-performing web experiences.",
+      "description": "I design and ship responsive websites and web apps with clean architecture, delightful UI, and scalable systems.",
+      "actions": {
+        "work": "Let's work together",
+        "projects": "View projects"
+      }
+    },
+    "about": {
+      "eyebrow": "About",
+      "heading": "Designing with intention, engineering with rigor."
+    },
+    "experience": {
+      "eyebrow": "Experience",
+      "heading": "Professional journey"
+    },
+    "skills": {
+      "eyebrow": "Skills",
+      "heading": "Tools and technologies I use every day."
+    },
+    "projects": {
+      "eyebrow": "Projects",
+      "heading": "Selected work balancing craft and impact.",
+      "filters": {
+        "all": "All Projects",
+        "web": "Web Apps",
+        "education": "Education",
+        "mentorship": "Mentorship"
+      }
+    },
+    "achievements": {
+      "eyebrow": "Achievements",
+      "heading": "Recognition and milestones"
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "heading": "Let's build something exceptional together.",
+      "title": "Start a conversation",
+      "description": "Share your goals, timeline, or a quick product idea. I'll reply within 24 hours.",
+      "email": "Email me",
+      "resume": "Download resume"
+    }
+  },
+  "projects_page": {
+    "eyebrow": "Projects",
+    "heading": "Case studies and highlights.",
+    "lead": "A curated set of projects showing product thinking, architecture, and delivery."
+  },
+  "project_case": {
+    "eyebrow": "Case Study",
+    "primary_cta": "Discuss a similar project",
+    "secondary_cta": "Back to projects"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "heading": "Let's create something amazing together.",
+    "lead": "Have a project in mind? Want to collaborate? Or just want to say hi? I'd love to hear from you.",
+    "form": {
+      "name": "Your Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "name_placeholder": "John Doe",
+      "email_placeholder": "john@example.com",
+      "subject_placeholder": "Project inquiry",
+      "message_placeholder": "Tell me about your project..."
+    },
+    "cards": {
+      "email": "Email",
+      "connect": "Connect",
+      "availability": "Availability"
+    },
+    "quick": {
+      "heading": "Prefer other ways to connect?",
+      "linkedin": {
+        "title": "LinkedIn Message",
+        "description": "Connect with me professionally and send a message on LinkedIn.",
+        "action": "Open LinkedIn"
+      },
+      "resume": {
+        "title": "View Resume",
+        "description": "Get my latest resume and experience snapshot.",
+        "action": "Get Resume"
+      },
+      "github": {
+        "title": "GitHub",
+        "description": "Explore open-source contributions and personal projects.",
+        "action": "View GitHub"
+      }
+    },
+    "success": {
+      "title": "Message sent successfully!",
+      "description": "Thank you for reaching out. I'll get back to you within 24 hours."
+    }
+  },
+  "resume": {
+    "eyebrow": "Resume",
+    "heading": "Get my full resume.",
+    "lead": "Need a detailed CV? I can share a PDF along with references and recent project summaries.",
+    "card_title": "Request the latest version",
+    "card_description": "Send a quick note and I'll reply with the most recent resume and portfolio links.",
+    "email_action": "Email for resume",
+    "home_action": "Back to home"
+  }
+}

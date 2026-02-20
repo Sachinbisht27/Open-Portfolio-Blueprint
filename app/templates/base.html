@@ -1,52 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="{{ current_lang }}" dir="{{ 'rtl' if is_rtl else 'ltr' }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>{{ title or "Sachin Bisht - Portfolio" }}</title>
-    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v={{ cache_buster }}">
+    <meta name="description" content="{{ site.meta.description }}">
+    <title>{{ t('meta.titles.' ~ page_name) }} | {{ site.person.full_name }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}?v={{ asset_version }}">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
-<body id="top">
-    <!-- Page Loader -->
-    <div class="page-loader">
+<body
+    id="top"
+    data-sending-label="{{ t('common.sending') }}"
+    data-copy-success="{{ t('common.copied') }}"
+    data-notification-error="{{ t('common.notification_error') }}"
+    data-dark-mode-label="{{ t('common.dark_mode') }}"
+    data-light-mode-label="{{ t('common.light_mode') }}"
+>
+    <div class="page-loader" aria-hidden="true">
         <div class="loader-spinner"></div>
     </div>
 
-    <!-- Scroll Progress Bar -->
     <div id="scrollProgress" class="scroll-progress"></div>
 
-    <!-- Dark Mode Toggle -->
-    <button id="darkModeToggle" class="dark-mode-toggle" aria-label="Toggle dark mode">
-        <i class="fas fa-moon"></i>
+    <button id="darkModeToggle" class="dark-mode-toggle" aria-label="{{ t('common.theme_toggle') }}">
+        <i class="fas fa-moon" aria-hidden="true"></i>
     </button>
 
-    <a class="skip-link" href="#main">Skip to content</a>
+    <a class="skip-link" href="#main">{{ t('common.skip_to_content') }}</a>
 
     <div class="bg-orb orb-1" aria-hidden="true"></div>
     <div class="bg-orb orb-2" aria-hidden="true"></div>
 
     <header class="site-header">
         <nav class="nav">
-            <a class="brand" href="{{ url_for('home') }}#home">
-                <span class="brand-mark">SB</span>
-                <span class="brand-text">Sachin Bisht</span>
+            <a class="brand" href="{{ lang_url('home') }}#home">
+                <span class="brand-mark">{{ site.person.initials }}</span>
+                <span class="brand-text">{{ site.person.full_name }}</span>
             </a>
-            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="nav-toggle-bar"></span>
-                <span class="nav-toggle-bar"></span>
-            </button>
-            <ul id="nav-menu" class="nav-menu">
-                <li><a href="{{ url_for('home') }}#home">Home</a></li>
-                <li><a href="{{ url_for('home') }}#about">About</a></li>
-                <li><a href="{{ url_for('home') }}#skills">Skills</a></li>
-                <li><a href="{{ url_for('projects') }}">Projects</a></li>
-                <li><a href="{{ url_for('contact') }}">Contact</a></li>
-            </ul>
+
+            <div class="nav-right">
+                <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-menu">
+                    <span class="sr-only">{{ t('common.nav_toggle') }}</span>
+                    <span class="nav-toggle-bar"></span>
+                    <span class="nav-toggle-bar"></span>
+                </button>
+
+                <ul id="nav-menu" class="nav-menu">
+                    <li><a href="{{ lang_url('home') }}#home">{{ t('common.nav.home') }}</a></li>
+                    <li><a href="{{ lang_url('home') }}#about">{{ t('common.nav.about') }}</a></li>
+                    <li><a href="{{ lang_url('home') }}#skills">{{ t('common.nav.skills') }}</a></li>
+                    <li><a href="{{ lang_url('projects') }}">{{ t('common.nav.projects') }}</a></li>
+                    <li><a href="{{ lang_url('contact') }}">{{ t('common.nav.contact') }}</a></li>
+                </ul>
+
+                <label for="languageSwitcher" class="sr-only">{{ t('common.language') }}</label>
+                <select id="languageSwitcher" class="language-select" aria-label="{{ t('common.language') }}">
+                    {% for language_code, language_name in supported_languages.items() %}
+                        <option value="{{ language_code }}" {% if current_lang == language_code %}selected{% endif %}>{{ language_name }}</option>
+                    {% endfor %}
+                </select>
+            </div>
         </nav>
     </header>
 
@@ -55,30 +71,32 @@
     </main>
 
     <footer class="site-footer">
-        <p>© 2026 Sachin Bisht. Built with intention.</p>
+        <p>{{ t('common.footer', year=current_year, name=site.person.full_name) }}</p>
         <div class="footer-links">
-            <a href="{{ url_for('home') }}#about">About</a>
-            <a href="{{ url_for('projects') }}">Projects</a>
-            <a href="{{ url_for('contact') }}">Contact</a>
+            <a href="{{ lang_url('home') }}#about">{{ t('common.footer_links.about') }}</a>
+            <a href="{{ lang_url('projects') }}">{{ t('common.footer_links.projects') }}</a>
+            <a href="{{ lang_url('contact') }}">{{ t('common.footer_links.contact') }}</a>
         </div>
     </footer>
 
-<script src="{{ url_for('static', filename='script.js') }}?v={{ cache_buster }}"></script>
+<script src="{{ url_for('static', filename='script.js') }}?v={{ asset_version }}"></script>
 <script>
     const navToggle = document.querySelector('.nav-toggle');
     const navMenu = document.querySelector('.nav-menu');
 
-    navToggle.addEventListener('click', () => {
-        const isOpen = navMenu.classList.toggle('is-open');
-        navToggle.setAttribute('aria-expanded', isOpen);
-    });
-
-    navMenu.querySelectorAll('a').forEach((link) => {
-        link.addEventListener('click', () => {
-            navMenu.classList.remove('is-open');
-            navToggle.setAttribute('aria-expanded', 'false');
+    if (navToggle && navMenu) {
+        navToggle.addEventListener('click', () => {
+            const isOpen = navMenu.classList.toggle('is-open');
+            navToggle.setAttribute('aria-expanded', isOpen);
         });
-    });
+
+        navMenu.querySelectorAll('a').forEach((link) => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('is-open');
+                navToggle.setAttribute('aria-expanded', 'false');
+            });
+        });
+    }
 </script>
 </body>
 </html>
