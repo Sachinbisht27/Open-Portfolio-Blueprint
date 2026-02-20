@@ -3,7 +3,7 @@
     "titles": {
       "home": "Inicio",
       "projects": "Proyectos",
-      "project_dost": "Caso de estudio",
+      "case_study": "Caso de estudio",
       "contact": "Contacto",
       "resume": "Curriculum"
     }
@@ -14,7 +14,7 @@
     "light_mode": "Cambiar a modo claro",
     "dark_mode": "Cambiar a modo oscuro",
     "language": "Idioma",
-    "nav_toggle": "Cambiar navegacion",
+    "nav_toggle": "Alternar navegación",
     "nav": {
       "home": "Inicio",
       "about": "Acerca de",
@@ -30,15 +30,15 @@
     },
     "sending": "Enviando...",
     "copy_email": "Copiar correo",
-    "copied": "Copiado al portapapeles!",
-    "notification_error": "Algo salio mal. Intentalo de nuevo.",
+    "copied": "¡Copiado al portapapeles!",
+    "notification_error": "Algo salió mal. Inténtalo de nuevo.",
     "available_now": "Disponible ahora"
   },
   "home": {
     "hero": {
       "headline": "Hola, soy {name}.",
       "subheadline": "Construyo experiencias web cuidadas y de alto rendimiento.",
-      "description": "Diseno y desarrollo sitios y apps web responsivas con arquitectura limpia, gran UI y sistemas escalables.",
+      "description": "Diseño y desarrollo sitios y aplicaciones web responsivas con arquitectura limpia, gran UI y sistemas escalables.",
       "actions": {
         "work": "Trabajemos juntos",
         "projects": "Ver proyectos"
@@ -63,7 +63,7 @@
         "all": "Todos los proyectos",
         "web": "Apps web",
         "education": "Educacion",
-        "mentorship": "Mentoria"
+        "mentorship": "Mentoría"
       }
     },
     "achievements": {
@@ -92,7 +92,7 @@
   "contact": {
     "eyebrow": "Contacto",
     "heading": "Creemos algo increible juntos.",
-    "lead": "Tienes un proyecto en mente? Quieres colaborar? Me encantaria saber de ti.",
+    "lead": "¿Tienes un proyecto en mente? ¿Quieres colaborar? Me encantará saber de ti.",
     "form": {
       "name": "Tu nombre",
       "email": "Correo electronico",
@@ -110,7 +110,7 @@
       "availability": "Disponibilidad"
     },
     "quick": {
-      "heading": "Prefieres otras formas de contacto?",
+      "heading": "¿Prefieres otras formas de contacto?",
       "linkedin": {
         "title": "Mensaje en LinkedIn",
         "description": "Conecta profesionalmente y enviame un mensaje por LinkedIn.",
@@ -135,7 +135,7 @@
   "resume": {
     "eyebrow": "Curriculum",
     "heading": "Obten mi curriculum completo.",
-    "lead": "Necesitas un CV detallado? Puedo compartir un PDF con referencias y resumenes recientes.",
+    "lead": "¿Necesitas un CV detallado? Puedo compartir un PDF con referencias y resúmenes de proyectos recientes.",
     "card_title": "Solicita la ultima version",
     "card_description": "Envia un mensaje rapido y te comparto el curriculum y enlaces del portafolio.",
     "email_action": "Pedir por correo",
