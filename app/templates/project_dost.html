@@ -3,52 +3,35 @@
 {% block content %}
 <section class="section page-hero">
     <div>
-        <p class="eyebrow">Case Study</p>
-        <h1>DOST Education: Call Scheduling &amp; Automation Platform</h1>
-        <p class="lead">Over three years, I grew from intern to Lead Developer, delivering a mission-critical platform that automates student-parent communication through IVR and callbacks.</p>
+        <p class="eyebrow">{{ t('project_case.eyebrow') }}</p>
+        <h1>{{ site.case_study.title }}</h1>
+        <p class="lead">{{ site.case_study.lead }}</p>
     </div>
 </section>
 
 <section class="section project-detail">
     <div class="content-grid">
-        <article class="content-card">
-            <h2>Motivation</h2>
-            <p>The project set out to reduce the manual effort required for high-volume calling operations and to raise response rates with smarter callback workflows. It also supports DOST’s mission to transform every home into a playful learning space for families.</p>
-        </article>
-        <article class="content-card">
-            <h2>Technical Architecture</h2>
-            <ul class="clean-list">
-                <li>Hybrid cloud on Google Cloud Platform designed for high-volume concurrent IVR calls.</li>
-                <li>Admin Dashboard with Python backend for scheduling, retries, and missed-call workflows.</li>
-                <li>Secure webhook integrations with Exotel and KooKoo to process events in real time.</li>
-                <li>Micro-services for call scheduling, missed-call handling, and webhook processing.</li>
-                <li>PostgreSQL for transactional data plus a custom ETL service into BigQuery.</li>
-                <li>Looker Studio dashboards powered by scheduled queries and curated views.</li>
-                <li>CI/CD via GitHub Actions to Cloud Run and Cloud Functions deployments.</li>
-                <li>Custom alerting with Cloud Scheduler notifications to Slack and email.</li>
-            </ul>
-        </article>
-        <article class="content-card">
-            <h2>My Contributions</h2>
-            <ul class="clean-list">
-                <li>Led system architecture and designed the full CI/CD pipeline.</li>
-                <li>Built the call scheduling engine, secure webhook handlers, and database query optimizations.</li>
-                <li>Introduced monitoring, alerting, and auto-retry for traffic spikes.</li>
-                <li>Mentored junior engineers and owned production release cycles.</li>
-            </ul>
-        </article>
-        <article class="content-card">
-            <h2>Scale &amp; Impact</h2>
-            <ul class="clean-list">
-                <li>90,000+ active users and 600,000 total platform users.</li>
-                <li>Reduced manual operations workload by ~70%.</li>
-                <li>Improved callback success rates with automated workflows.</li>
-            </ul>
-        </article>
+        {% for section in site.case_study.sections %}
+            <article class="content-card">
+                <h2>{{ section.title }}</h2>
+                {% if section.get('body') %}
+                    <p>{{ section.get('body') }}</p>
+                {% endif %}
+
+                {% if section.get('items') %}
+                    <ul class="clean-list">
+                        {% for item in section.get('items') %}
+                            <li>{{ item }}</li>
+                        {% endfor %}
+                    </ul>
+                {% endif %}
+            </article>
+        {% endfor %}
     </div>
+
     <div class="content-cta">
-        <a class="btn primary" href="{{ url_for('contact') }}">Discuss a similar project</a>
-        <a class="btn ghost" href="{{ url_for('projects') }}">Back to projects</a>
+        <a class="btn primary" href="{{ lang_url('contact') }}">{{ t('project_case.primary_cta') }}</a>
+        <a class="btn ghost" href="{{ lang_url('projects') }}">{{ t('project_case.secondary_cta') }}</a>
     </div>
 </section>
 {% endblock %}
