@@ -3,7 +3,7 @@
 ## Routes
 - `GET /` Home
 - `GET /projects` Projects
-- `GET /projects/dost` Case study
+- `GET /projects/case-study` Case study
 - `GET /contact` Contact
 - `GET /resume` Resume
 
