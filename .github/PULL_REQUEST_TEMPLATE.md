@@ -1,15 +1,25 @@
-#[ISSUE_ID]
+## Summary
 
-### Please complete the following steps and check these boxes before filing your PR:
+Describe the goal of this PR and what changed.
 
-### Types of changes
-- [ ] Bug fix (a change which fixes an issue)
-- [ ] New feature (a change which adds functionality)
+## Related Issue
 
-### Short description of what this resolves:
-A clear and concise description of the code changes.
+Closes #<issue-id>
 
-### Checklist:
-- [ ] I have performed a self-review of my own code.
-- [ ] The code follows the style guidelines of this project.
-- [ ] The code changes are passing the CI checks
+## Change Type
+- [ ] Bug fix
+- [ ] Feature
+- [ ] Refactor
+- [ ] Documentation
+- [ ] Tests/CI
+
+## Checklist
+- [ ] I ran tests locally (`pytest`)
+- [ ] I ran lint checks locally (`flake8`, `black --check`)
+- [ ] I updated docs/config examples if needed
+- [ ] I added or updated tests for behavior changes
+- [ ] I verified multilingual/dark mode behavior for UI changes
+
+## Screenshots (if UI change)
+
+Add before/after screenshots.
