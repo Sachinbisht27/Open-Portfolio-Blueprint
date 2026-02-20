@@ -3,133 +3,130 @@
 {% block content %}
 <section class="section page-hero animate-on-scroll">
     <div>
-        <p class="eyebrow">Contact</p>
-        <h1>Let's create something amazing together.</h1>
-        <p class="lead">Have a project in mind? Want to collaborate? Or just want to say hi? I'd love to hear from you!</p>
+        <p class="eyebrow">{{ t('contact.eyebrow') }}</p>
+        <h1>{{ t('contact.heading') }}</h1>
+        <p class="lead">{{ t('contact.lead') }}</p>
     </div>
 </section>
 
-<!-- Success Message -->
 <script>
-    // Check if form was submitted successfully
     const urlParams = new URLSearchParams(window.location.search);
     if (urlParams.get('success') === 'true') {
+        const successTitle = {{ t('contact.success.title') | tojson }};
+        const successDescription = {{ t('contact.success.description') | tojson }};
         const successBanner = document.createElement('div');
-        successBanner.style.cssText = 'background: linear-gradient(135deg, #10b981, #059669); color: white; padding: 20px; text-align: center; border-radius: 12px; margin: 0 24px 20px; box-shadow: 0 4px 12px rgba(16, 185, 129, 0.3);';
-        successBanner.innerHTML = '<h3 style="margin: 0 0 8px; font-size: 20px;">Message Sent Successfully!</h3><p style="margin: 0;">Thank you for reaching out! I\'ll get back to you within 24 hours.</p>';
-        document.querySelector('.section').insertAdjacentElement('beforebegin', successBanner);
+        successBanner.className = 'success-banner';
+        successBanner.innerHTML = `<h3>${successTitle}</h3><p>${successDescription}</p>`;
 
-        // Remove success parameter from URL after 5 seconds
+        const heroSection = document.querySelector('.page-hero');
+        if (heroSection) {
+            heroSection.insertAdjacentElement('afterend', successBanner);
+        }
+
         setTimeout(() => {
-            window.history.replaceState({}, document.title, window.location.pathname);
-            successBanner.style.transition = 'opacity 0.5s';
-            successBanner.style.opacity = '0';
-            setTimeout(() => successBanner.remove(), 500);
-        }, 5000);
+            const url = new URL(window.location.href);
+            url.searchParams.delete('success');
+            window.history.replaceState({}, document.title, url.toString());
+            successBanner.classList.add('fade');
+            setTimeout(() => successBanner.remove(), 400);
+        }, 4500);
     }
 </script>
 
 <section class="section">
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 32px;">
-        <!-- Contact Form -->
+    {% set success_redirect = site.contact.form.success_redirect or url_for('contact', lang=current_lang, success='true', _external=True) %}
+    <div class="contact-layout">
         <div class="animate-on-scroll">
-            <form action="https://formsubmit.co/sachinbisht27@gmail.com" method="POST" class="contact-form">
-                <!-- FormSubmit Configuration -->
-                <input type="hidden" name="_subject" value="New Portfolio Contact from Website!">
+            <form action="{{ site.contact.form.action }}" method="POST" class="contact-form">
+                <input type="hidden" name="_subject" value="{{ site.contact.form.subject }}">
                 <input type="hidden" name="_captcha" value="false">
                 <input type="hidden" name="_template" value="table">
-                <input type="text" name="_honey" style="display:none">
-                <input type="hidden" name="_next" value="https://sachin-bisht-portfolio.vercel.app/contact?success=true">
+                <input type="text" name="_honey" class="hidden-input">
+                <input type="hidden" name="_next" value="{{ success_redirect }}">
 
                 <div class="form-group">
-                    <label for="name" class="form-label">Your Name *</label>
-                    <input type="text" id="name" name="name" class="form-input" required placeholder="John Doe">
+                    <label for="name" class="form-label">{{ t('contact.form.name') }} *</label>
+                    <input type="text" id="name" name="name" class="form-input" required placeholder="{{ t('contact.form.name_placeholder') }}">
                 </div>
 
                 <div class="form-group">
-                    <label for="email" class="form-label">Email Address *</label>
-                    <input type="email" id="email" name="email" class="form-input" required placeholder="john@example.com">
+                    <label for="email" class="form-label">{{ t('contact.form.email') }} *</label>
+                    <input type="email" id="email" name="email" class="form-input" required placeholder="{{ t('contact.form.email_placeholder') }}">
                 </div>
 
                 <div class="form-group">
-                    <label for="subject" class="form-label">Subject *</label>
-                    <input type="text" id="subject" name="subject" class="form-input" required placeholder="Project Inquiry">
+                    <label for="subject" class="form-label">{{ t('contact.form.subject') }} *</label>
+                    <input type="text" id="subject" name="subject" class="form-input" required placeholder="{{ t('contact.form.subject_placeholder') }}">
                 </div>
 
                 <div class="form-group">
-                    <label for="message" class="form-label">Message *</label>
-                    <textarea id="message" name="message" class="form-textarea" required placeholder="Tell me about your project..."></textarea>
+                    <label for="message" class="form-label">{{ t('contact.form.message') }} *</label>
+                    <textarea id="message" name="message" class="form-textarea" required placeholder="{{ t('contact.form.message_placeholder') }}"></textarea>
                 </div>
 
-                <button type="submit" class="btn primary submit-btn">Send Message</button>
+                <button type="submit" class="btn primary submit-btn">{{ t('contact.form.send') }}</button>
             </form>
         </div>
 
-        <!-- Contact Info -->
         <div class="animate-on-scroll">
-            <div class="content-card" style="margin-bottom: 24px;">
-                <h3>📧 Email</h3>
-                <p>sachinbisht27@gmail.com</p>
-                <button class="copy-btn" data-copy="sachinbisht27@gmail.com" style="margin-top: 12px;">
+            <div class="content-card contact-info-card">
+                <h3>📧 {{ t('contact.cards.email') }}</h3>
+                <p>{{ site.person.email }}</p>
+                <button class="copy-btn" data-copy="{{ site.person.email }}">
                     <i class="fas fa-copy"></i>
-                    <span>Copy Email</span>
+                    <span>{{ t('common.copy_email') }}</span>
                 </button>
             </div>
 
-            <div class="content-card" style="margin-bottom: 24px;">
-                <h3>🔗 Connect</h3>
-                <div style="display: flex; flex-direction: column; gap: 12px; margin-top: 12px;">
-                    <a href="https://github.com/Sachinbisht27" target="_blank" rel="noopener noreferrer" class="text-link">
-                        <i class="fab fa-github"></i> GitHub
-                    </a>
-                    <a href="https://www.linkedin.com/in/sachin-bisht-080981158/" target="_blank" rel="noopener noreferrer" class="text-link">
-                        <i class="fab fa-linkedin"></i> LinkedIn
-                    </a>
-                    <a href="https://stackoverflow.com/users/19982527/sachin-bisht?tab=profile" target="_blank" rel="noopener noreferrer" class="text-link">
-                        <i class="fab fa-stack-overflow"></i> Stack Overflow
-                    </a>
+            <div class="content-card contact-info-card">
+                <h3>🔗 {{ t('contact.cards.connect') }}</h3>
+                <div class="link-stack">
+                    {% for social in site.social_links %}
+                        <a href="{{ social.url }}" target="_blank" rel="noopener noreferrer" class="text-link">
+                            <i class="{{ social.icon }}"></i> {{ social.label }}
+                        </a>
+                    {% endfor %}
                 </div>
             </div>
 
-            <div class="content-card">
-                <h3>⏰ Availability</h3>
-                <p>Currently available for freelance projects and full-time opportunities.</p>
-                <p style="margin-top: 12px; color: var(--accent); font-weight: 600;">
-                    <i class="fas fa-circle" style="font-size: 8px; vertical-align: middle;"></i>
-                    Available Now
+            <div class="content-card contact-info-card">
+                <h3>⏰ {{ t('contact.cards.availability') }}</h3>
+                <p>{{ site.person.availability }}</p>
+                <p class="availability-pill">
+                    <i class="fas fa-circle"></i>
+                    {{ t('common.available_now') }}
                 </p>
             </div>
         </div>
     </div>
 </section>
 
-<!-- Quick Contact Options -->
 <section class="section">
     <div class="section-head animate-on-scroll">
-        <h2>Prefer other ways to connect?</h2>
+        <h2>{{ t('contact.quick.heading') }}</h2>
     </div>
     <div class="content-grid">
         <div class="content-card tilt-card animate-on-scroll">
-            <h3>💼 LinkedIn Message</h3>
-            <p>Connect with me professionally and send a message on LinkedIn.</p>
-            <a href="https://www.linkedin.com/in/sachin-bisht-080981158/" target="_blank" rel="noopener noreferrer" class="btn ghost" style="margin-top: 16px; width: 100%;">
-                Open LinkedIn
+            <h3>💼 {{ t('contact.quick.linkedin.title') }}</h3>
+            <p>{{ t('contact.quick.linkedin.description') }}</p>
+            <a href="{{ site.social_links[1].url }}" target="_blank" rel="noopener noreferrer" class="btn ghost full-width-btn">
+                {{ t('contact.quick.linkedin.action') }}
             </a>
         </div>
 
         <div class="content-card tilt-card animate-on-scroll">
-            <h3>📄 View Resume</h3>
-            <p>Download my resume to learn more about my experience and skills.</p>
-            <a href="{{ url_for('resume') }}" class="btn ghost" style="margin-top: 16px; width: 100%;">
-                Get Resume
+            <h3>📄 {{ t('contact.quick.resume.title') }}</h3>
+            <p>{{ t('contact.quick.resume.description') }}</p>
+            <a href="{{ lang_url('resume') }}" class="btn ghost full-width-btn">
+                {{ t('contact.quick.resume.action') }}
             </a>
         </div>
 
         <div class="content-card tilt-card animate-on-scroll">
-            <h3>💻 GitHub</h3>
-            <p>Check out my open-source contributions and personal projects.</p>
-            <a href="https://github.com/Sachinbisht27" target="_blank" rel="noopener noreferrer" class="btn ghost" style="margin-top: 16px; width: 100%;">
-                View GitHub
+            <h3>💻 {{ t('contact.quick.github.title') }}</h3>
+            <p>{{ t('contact.quick.github.description') }}</p>
+            <a href="{{ site.social_links[0].url }}" target="_blank" rel="noopener noreferrer" class="btn ghost full-width-btn">
+                {{ t('contact.quick.github.action') }}
             </a>
         </div>
     </div>
