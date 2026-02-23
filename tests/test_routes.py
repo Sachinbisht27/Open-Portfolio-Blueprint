@@ -53,6 +53,22 @@ def test_language_switcher_is_present(client) -> None:
     assert 'id="languageSwitcher"' in html
 
 
+def test_mobile_rtl_timeline_alignment_rule_exists(client) -> None:
+    response = client.get("/static/style.css")
+    stylesheet = response.data.decode("utf-8")
+    selector = '[dir="rtl"] .timeline::before'
+
+    assert response.status_code == 200
+    assert selector in stylesheet
+
+    rtl_rule_text = stylesheet.split(selector, 1)[1]
+    _, _, rtl_rule_body_with_suffix = rtl_rule_text.partition("{")
+    rtl_rule_body, _, _ = rtl_rule_body_with_suffix.partition("}")
+
+    assert "right: 20px;" in rtl_rule_body
+    assert "transform: translateX(50%);" in stylesheet
+
+
 def test_asset_version_query_param_is_stable(client) -> None:
     first_response = client.get("/?lang=en")
     second_response = client.get("/?lang=en")
