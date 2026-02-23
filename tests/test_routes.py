@@ -56,10 +56,16 @@ def test_language_switcher_is_present(client) -> None:
 def test_mobile_rtl_timeline_alignment_rule_exists(client) -> None:
     response = client.get("/static/style.css")
     stylesheet = response.data.decode("utf-8")
+    selector = '[dir="rtl"] .timeline::before'
 
     assert response.status_code == 200
-    assert '[dir="rtl"] .timeline::before' in stylesheet
-    assert "right: 20px;" in stylesheet
+    assert selector in stylesheet
+
+    rtl_rule_text = stylesheet.split(selector, 1)[1]
+    _, _, rtl_rule_body_with_suffix = rtl_rule_text.partition("{")
+    rtl_rule_body, _, _ = rtl_rule_body_with_suffix.partition("}")
+
+    assert "right: 20px;" in rtl_rule_body
     assert "transform: translateX(50%);" in stylesheet
 
 
