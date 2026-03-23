@@ -1090,9 +1090,6 @@ a {
         min-width: 92px;
     }
 
-    .typing-text {
-        min-width: 0;
-    }
 }
 
 /* ============================================
@@ -1147,23 +1144,29 @@ a {
 
 /* Typing Animation */
 .typing-text {
-    display: inline-block;
-    border-right: 3px solid var(--accent);
-    padding-right: 5px;
-    animation: blink 0.7s infinite;
-    min-width: clamp(180px, 60vw, 280px);
+    display: inline-flex;
+    align-items: center;
+    white-space: nowrap;
+}
+
+.typing-text::after {
+    content: '';
+    width: 3px;
+    height: 1em;
+    margin-inline-start: 0.35ch;
+    background: var(--accent);
+    animation: blink 0.7s steps(1, end) infinite;
+    flex-shrink: 0;
 }
 
 @keyframes blink {
-
     0%,
     50% {
-        border-color: var(--accent);
+        opacity: 1;
     }
-
     51%,
     100% {
-        border-color: transparent;
+        opacity: 0;
     }
 }
 
