@@ -35,8 +35,38 @@
             <h3>{{ site.hero.card.title }}</h3>
             <p>{{ site.hero.card.description }}</p>
         </div>
-        <div class="hero-illustration">
-            <img src="{{ url_for('static', filename='images/developer-illustration.svg') }}" alt="Developer illustration">
+        <div class="hero-creative" role="img" aria-label="Animated live coding workspace">
+            <div class="creative-grid">
+                <div class="creative-panel creative-editor">
+                    <div class="creative-topbar" aria-hidden="true">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <p>portfolio.py</p>
+                    </div>
+                    <div class="creative-code" aria-hidden="true">
+                        <span class="code-line code-line-1"></span>
+                        <span class="code-line code-line-2"></span>
+                        <span class="code-line code-line-3"></span>
+                        <span class="code-line code-line-4"></span>
+                        <span class="code-line code-line-5"></span>
+                    </div>
+                    <p class="creative-terminal"><span class="prompt">$</span> npm run ship <span class="terminal-cursor"></span></p>
+                </div>
+                <div class="creative-panel creative-status">
+                    <p class="creative-label">Build Pulse</p>
+                    <p class="creative-metric">24 deploys this month</p>
+                    <div class="creative-progress" aria-hidden="true"><span></span></div>
+                    <ul class="creative-badges" aria-hidden="true">
+                        <li>tests: pass</li>
+                        <li>score: 98</li>
+                        <li>uptime: 99.9%</li>
+                    </ul>
+                </div>
+            </div>
+            <span class="creative-tag creative-tag-1" aria-hidden="true">&lt;/&gt;</span>
+            <span class="creative-tag creative-tag-2" aria-hidden="true">{ API }</span>
+            <span class="creative-tag creative-tag-3" aria-hidden="true">git push</span>
         </div>
     </div>
 </section>
