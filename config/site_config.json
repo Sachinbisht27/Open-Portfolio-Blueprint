@@ -170,7 +170,7 @@
   "experience": [
     {
       "period": "2023 - Present",
-      "company": "DOST Education",
+      "company": "Education Startup",
       "role": "Full Stack Developer + DevOps Engineer",
       "description": "Led development of a call scheduling and automation platform with IVR and callback workflows. Built responsive applications used daily by thousands of users.",
       "tech": [
@@ -183,7 +183,7 @@
     },
     {
       "period": "2025 - Present",
-      "company": "MentorTogether",
+      "company": "Mentorship Platform",
       "role": "Full Stack Developer + QA Engineer",
       "description": "Developing a mentorship platform with learning modules, messaging workflows, and an admin portal while maintaining quality and accessibility standards.",
       "tech": [
@@ -317,7 +317,7 @@
         "web",
         "education"
       ],
-      "company": "DOST Education",
+      "company": "Education Startup",
       "period": "2023 - Present",
       "title": "Call Scheduling & Automation Platform",
       "description": "Led development of an IVR + callback system that automated parent-student engagement workflows and improved campaign operations.",
@@ -351,7 +351,7 @@
         "web",
         "mentorship"
       ],
-      "company": "MentorTogether",
+      "company": "Mentorship Platform",
       "period": "2025 - Present",
       "title": "Mentorship Platform",
       "description": "Developed a mentorship platform with learning workflows, communication modules, and admin tooling using React and TypeScript.",
@@ -418,7 +418,7 @@
   "projects_page": {
     "projects": [
       {
-        "company": "DOST Education",
+        "company": "Education Startup",
         "period": "2021 - 2024",
         "title": "Call scheduling and automation platform",
         "description": "IVR + callback system automating parent-student engagement at scale.",
@@ -511,7 +511,7 @@
     "email": "sachinbisht27@gmail.com"
   },
   "case_study": {
-    "title": "DOST Education: Call Scheduling and Automation Platform",
+    "title": "Education Startup: Call Scheduling and Automation Platform",
     "lead": "Over three years, I grew from intern to lead developer, delivering a mission-critical platform that automates student-parent communication through IVR and callbacks.",
     "sections": [
       {

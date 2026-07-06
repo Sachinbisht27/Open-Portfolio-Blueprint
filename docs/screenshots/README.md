@@ -5,13 +5,10 @@ Dark-mode screenshots generated during the UI polish pass.
 ## Desktop
 - `desktop-dark-home.png`
 - `desktop-dark-projects.png`
-- `desktop-dark-case-study.png`
 - `desktop-dark-contact.png`
 
 ## Mobile
 - `mobile-dark-home.png`
-- `mobile-dark-projects.png`
-- `mobile-dark-case-study.png`
 - `mobile-dark-contact.png`
 
 ## Multilingual Mobile Checks
