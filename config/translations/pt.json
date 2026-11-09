@@ -31,39 +31,38 @@
     "sending": "Enviando...",
     "copy_email": "Copiar email",
     "copied": "Copiado para a área de transferência!",
-    "notification_error": "Algo deu errado. Tente novamente.",
-    "available_now": "Disponivel agora"
+    "notification_error": "Algo deu errado. Tente novamente."
   },
   "home": {
     "hero": {
       "headline": "Oi, eu sou {name}.",
-      "subheadline": "Construo experiências web cuidadosas e de alta performance.",
-      "description": "Projeto e entrego sites e aplicações web responsivas com arquitetura limpa, ótima UI e sistemas escaláveis.",
+      "subheadline": "Um ponto de partida simples para apresentar seu trabalho.",
+      "description": "Use este espaço para resumir seu trabalho e o que diferencia sua abordagem.",
       "actions": {
-        "work": "Vamos trabalhar juntos",
+        "work": "Entre em contato",
         "projects": "Ver projetos"
       }
     },
     "about": {
       "eyebrow": "Sobre",
-      "heading": "Design com intencao, engenharia com rigor."
+      "heading": "Sobre você"
     },
     "experience": {
       "eyebrow": "Experiencia",
-      "heading": "Jornada profissional"
+      "heading": "Exemplos de experiência"
     },
     "skills": {
       "eyebrow": "Habilidades",
-      "heading": "Ferramentas e tecnologias que uso todos os dias."
+      "heading": "Habilidades e ferramentas"
     },
     "projects": {
       "eyebrow": "Projetos",
-      "heading": "Trabalhos selecionados com equilibrio entre qualidade e impacto.",
+      "heading": "Projetos de exemplo",
       "filters": {
         "all": "Todos os projetos",
         "web": "Apps web",
-        "education": "Educacao",
-        "mentorship": "Mentoria"
+        "design": "Design",
+        "open_source": "Código aberto"
       },
       "filter_status": "Mostrando {count} projetos de {filter}."
     },
@@ -75,7 +74,7 @@
       "eyebrow": "Contato",
       "heading": "Vamos construir algo excepcional juntos.",
       "title": "Inicie uma conversa",
-      "description": "Compartilhe seus objetivos, prazo ou ideia de produto. Respondo em ate 24 horas.",
+      "description": "Personalize esta mensagem com orientações para quem deseja entrar em contato.",
       "email": "Enviar email",
       "resume": "Baixar curriculo"
     }
@@ -83,7 +82,7 @@
   "projects_page": {
     "eyebrow": "Projetos",
     "heading": "Estudos de caso e destaques.",
-    "lead": "Uma selecao de projetos que mostra pensamento de produto, arquitetura e entrega."
+    "lead": "Exemplos que mostram como apresentar seus projetos."
   },
   "project_case": {
     "eyebrow": "Estudo de caso",
@@ -93,17 +92,17 @@
   "contact": {
     "eyebrow": "Contato",
     "heading": "Vamos criar algo incrivel juntos.",
-    "lead": "Tem um projeto em mente? Quer colaborar? Vou adorar falar com você.",
+    "lead": "Envie uma pergunta, ideia de colaboração ou consulta sobre um projeto.",
     "form": {
       "name": "Seu nome",
       "email": "Endereco de email",
       "subject": "Assunto",
       "message": "Mensagem",
       "send": "Enviar mensagem",
-      "name_placeholder": "John Doe",
-      "email_placeholder": "john@example.com",
+      "name_placeholder": "Seu nome",
+      "email_placeholder": "you@example.com",
       "subject_placeholder": "Consulta de projeto",
-      "message_placeholder": "Conte-me sobre seu projeto..."
+      "message_placeholder": "Escreva sua mensagem..."
     },
     "cards": {
       "email": "Email",
@@ -114,32 +113,32 @@
       "heading": "Prefere outras formas de contato?",
       "linkedin": {
         "title": "Mensagem no LinkedIn",
-        "description": "Conecte-se profissionalmente e envie uma mensagem no LinkedIn.",
+        "description": "Adicione um perfil profissional para facilitar conexões.",
         "action": "Abrir LinkedIn"
       },
       "resume": {
         "title": "Ver curriculo",
-        "description": "Acesse meu curriculo mais recente e resumo de experiencia.",
+        "description": "Explique como consultar ou solicitar um currículo.",
         "action": "Obter curriculo"
       },
       "github": {
         "title": "GitHub",
-        "description": "Explore contribuicoes open-source e projetos pessoais.",
+        "description": "Adicione links para contribuições ou projetos que deseja compartilhar.",
         "action": "Ver GitHub"
       }
     },
     "success": {
       "title": "Mensagem enviada com sucesso!",
-      "description": "Obrigado pelo contato. Responderei em ate 24 horas."
+      "description": "Personalize esta mensagem com os próximos passos após o envio do formulário."
     }
   },
   "resume": {
     "eyebrow": "Curriculo",
-    "heading": "Obtenha meu curriculo completo.",
-    "lead": "Precisa de um CV detalhado? Posso compartilhar um PDF com referências e resumos de projetos recentes.",
-    "card_title": "Solicite a versao mais recente",
-    "card_description": "Envie uma mensagem rapida e eu retorno com o curriculo e links do portfolio.",
-    "email_action": "Pedir por email",
+    "heading": "Informações do currículo",
+    "lead": "Explique como consultar ou solicitar um currículo.",
+    "card_title": "Detalhes do currículo",
+    "card_description": "Adicione um link para download ou explique como solicitar uma cópia.",
+    "email_action": "Contato",
     "home_action": "Voltar ao inicio"
   }
 }
