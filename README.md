@@ -4,11 +4,13 @@ A configurable, multilingual portfolio sample built for anyone to adapt.
 The profile, projects, experience, case study, and contact details shipped in this repository are placeholders for demonstration. Replace them with your own accurate content and links before publishing.
 
 ## 30-Second Overview
+
 - **Problem it solves:** Most portfolio templates are hardcoded, single-language, and difficult to reuse.
 - **Who it is for:** Anyone who wants a portfolio base they can customize.
 - **Why choose this:** You can fork it, update a single config file, support multiple languages, and adapt the layout to your needs.
 
 ## Features
+
 - Config-driven profile, projects, skills, and case-study content via `config/site_config.json`
 - Multilingual UI with global language switcher (English, Hindi, Tamil, Telugu, Marathi, Spanish, Arabic, Portuguese)
 - Persistent language preference and RTL support for Arabic
@@ -17,6 +19,7 @@ The profile, projects, experience, case study, and contact details shipped in th
 - Open-source contributor workflow (issues, PR template, docs, tests, CI)
 
 ## Quick Start
+
 ### 1. Clone and install
 ```bash
 git clone https://github.com/<your-org>/<your-repo>.git
@@ -34,9 +37,11 @@ Open `http://127.0.0.1:5000`.
 
 ### 3. Customize your portfolio
 Update your details in:
+
 - `config/site_config.json`
 
 At minimum, change:
+
 - `person.full_name`
 - `person.email`
 - `person.availability` and `person.location`
@@ -51,6 +56,7 @@ At minimum, change:
 The included contact form and social URLs use example addresses and handles. Replace them with destinations you control before deploying. Sample metrics and skill ratings are intentionally omitted; only add claims you can support.
 
 ## Configuration Model
+
 - **Primary customization surface:** `config/site_config.json`
 - **UI translation dictionaries:** `config/translations/*.json`
 - **Optional localized config values:** any text value can be either:
@@ -74,6 +80,7 @@ tests/
 ```
 
 ## Documentation
+
 - `docs/installation.md`
 - `docs/quick-start.md`
 - `docs/advanced-usage.md`
@@ -83,6 +90,7 @@ tests/
 - `docs/troubleshooting.md`
 
 ## Open Source Model and Licensing
+
 - Current community distribution: **MIT** (`LICENSE`)
 - Planned commercial direction: **Open-core**
   - Core template remains open source
@@ -92,11 +100,13 @@ tests/
 This project follows **Semantic Versioning** (`MAJOR.MINOR.PATCH`).
 
 ## Quality Gates
+
 - Unit/integration tests: `pytest`
 - Lint/format checks: `flake8`, `black --check`
 - GitHub Actions CI runs on pushes and PRs
 
 ## Community
+
 - Contribution guide: `CONTRIBUTING.md`
 - Code of conduct: `CODE_OF_CONDUCT.md`
 - Roadmap: `Roadmap.md`
@@ -104,6 +114,7 @@ This project follows **Semantic Versioning** (`MAJOR.MINOR.PATCH`).
 - Issues and PR templates under `.github/`
 
 ## Example Usage
+
 - Sample configuration: `examples/site_config.example.json`
 - The default configuration is also generic sample content so the app can be previewed immediately.
 

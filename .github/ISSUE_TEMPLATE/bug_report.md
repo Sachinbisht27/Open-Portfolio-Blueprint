@@ -9,6 +9,7 @@ labels: [bug]
 Describe the bug clearly.
 
 ## Steps to Reproduce
+
 1.
 2.
 3.
@@ -20,6 +21,7 @@ What should happen?
 What happened instead?
 
 ## Environment
+
 - OS:
 - Browser (if UI bug):
 - Python version:

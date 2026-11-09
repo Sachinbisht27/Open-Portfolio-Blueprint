@@ -4,12 +4,14 @@
 We are committed to a harassment-free, inclusive community for everyone, regardless of age, body size, disability, ethnicity, gender identity or expression, experience level, nationality, personal appearance, race, religion, or sexual identity and orientation.
 
 ## Expected Behavior
+
 - Be respectful and constructive.
 - Assume good intent and discuss ideas, not people.
 - Give and receive feedback professionally.
 - Focus on what is best for users and the community.
 
 ## Unacceptable Behavior
+
 - Harassment, hate speech, or discrimination.
 - Trolling, insulting/derogatory comments, and personal attacks.
 - Publishing others' private information without permission.

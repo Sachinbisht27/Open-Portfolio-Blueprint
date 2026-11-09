@@ -7,6 +7,7 @@ Describe the goal of this PR and what changed.
 Closes #<issue-id>
 
 ## Change Type
+
 - [ ] Bug fix
 - [ ] Feature
 - [ ] Refactor
@@ -14,6 +15,7 @@ Closes #<issue-id>
 - [ ] Tests/CI
 
 ## Checklist
+
 - [ ] I ran tests locally (`pytest`)
 - [ ] I ran lint checks locally (`flake8`, `black --check`)
 - [ ] I updated docs/config examples if needed
