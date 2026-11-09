@@ -25,10 +25,6 @@
 
     <div id="scrollProgress" class="scroll-progress"></div>
 
-    <button id="darkModeToggle" class="dark-mode-toggle" aria-label="{{ t('common.theme_toggle') }}">
-        <i class="fas fa-moon" aria-hidden="true"></i>
-    </button>
-
     <a class="skip-link" href="#main">{{ t('common.skip_to_content') }}</a>
 
     <div class="bg-orb orb-1" aria-hidden="true"></div>
@@ -62,6 +58,10 @@
                         <option value="{{ language_code }}" {% if current_lang == language_code %}selected{% endif %}>{{ language_name }}</option>
                     {% endfor %}
                 </select>
+
+                <button id="darkModeToggle" class="dark-mode-toggle" type="button" aria-label="{{ t('common.theme_toggle') }}">
+                    <i class="fas fa-moon" aria-hidden="true"></i>
+                </button>
             </div>
         </nav>
     </header>

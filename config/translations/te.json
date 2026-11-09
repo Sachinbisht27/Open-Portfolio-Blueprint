@@ -64,7 +64,8 @@
         "web": "వెబ్ యాప్స్",
         "education": "విద్య",
         "mentorship": "మెంటర్‌షిప్"
-      }
+      },
+      "filter_status": "{filter} కోసం {count} ప్రాజెక్ట్‌లు చూపబడుతున్నాయి."
     },
     "achievements": {
       "eyebrow": "విజయాలు",

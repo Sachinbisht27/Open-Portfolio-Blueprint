@@ -64,7 +64,8 @@
         "web": "تطبيقات ويب",
         "education": "التعليم",
         "mentorship": "الارشاد"
-      }
+      },
+      "filter_status": "يتم عرض {count} مشاريع ضمن {filter}."
     },
     "achievements": {
       "eyebrow": "الانجازات",
