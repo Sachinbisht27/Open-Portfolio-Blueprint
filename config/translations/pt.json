@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "titles": {
+      "home": "Inicio",
+      "projects": "Projetos",
+      "case_study": "Estudo de caso",
+      "contact": "Contato",
+      "resume": "Curriculo"
+    }
+  },
+  "common": {
+    "skip_to_content": "Ir para o conteudo",
+    "theme_toggle": "Alternar modo escuro",
+    "light_mode": "Mudar para modo claro",
+    "dark_mode": "Mudar para modo escuro",
+    "language": "Idioma",
+    "nav_toggle": "Alternar navegacao",
+    "nav": {
+      "home": "Inicio",
+      "about": "Sobre",
+      "skills": "Habilidades",
+      "projects": "Projetos",
+      "contact": "Contato"
+    },
+    "footer": "© {year} {name}. Feito para fork e personalizacao.",
+    "footer_links": {
+      "about": "Sobre",
+      "projects": "Projetos",
+      "contact": "Contato"
+    },
+    "sending": "Enviando...",
+    "copy_email": "Copiar email",
+    "copied": "Copiado para a área de transferência!",
+    "notification_error": "Algo deu errado. Tente novamente."
+  },
+  "home": {
+    "hero": {
+      "headline": "Oi, eu sou {name}.",
+      "subheadline": "Um ponto de partida simples para apresentar seu trabalho.",
+      "description": "Use este espaço para resumir seu trabalho e o que diferencia sua abordagem.",
+      "actions": {
+        "work": "Entre em contato",
+        "projects": "Ver projetos"
+      }
+    },
+    "about": {
+      "eyebrow": "Sobre",
+      "heading": "Sobre você"
+    },
+    "experience": {
+      "eyebrow": "Experiencia",
+      "heading": "Exemplos de experiência"
+    },
+    "skills": {
+      "eyebrow": "Habilidades",
+      "heading": "Habilidades e ferramentas"
+    },
+    "projects": {
+      "eyebrow": "Projetos",
+      "heading": "Projetos de exemplo",
+      "filters": {
+        "all": "Todos os projetos",
+        "web": "Apps web",
+        "design": "Design",
+        "open_source": "Código aberto"
+      },
+      "filter_status": "Mostrando {count} projetos de {filter}."
+    },
+    "achievements": {
+      "eyebrow": "Conquistas",
+      "heading": "Reconhecimentos e marcos"
+    },
+    "contact": {
+      "eyebrow": "Contato",
+      "heading": "Vamos construir algo excepcional juntos.",
+      "title": "Inicie uma conversa",
+      "description": "Personalize esta mensagem com orientações para quem deseja entrar em contato.",
+      "email": "Enviar email",
+      "resume": "Baixar curriculo"
+    }
+  },
+  "projects_page": {
+    "eyebrow": "Projetos",
+    "heading": "Estudos de caso e destaques.",
+    "lead": "Exemplos que mostram como apresentar seus projetos."
+  },
+  "project_case": {
+    "eyebrow": "Estudo de caso",
+    "primary_cta": "Discutir um projeto parecido",
+    "secondary_cta": "Voltar aos projetos"
+  },
+  "contact": {
+    "eyebrow": "Contato",
+    "heading": "Vamos criar algo incrivel juntos.",
+    "lead": "Envie uma pergunta, ideia de colaboração ou consulta sobre um projeto.",
+    "form": {
+      "name": "Seu nome",
+      "email": "Endereco de email",
+      "subject": "Assunto",
+      "message": "Mensagem",
+      "send": "Enviar mensagem",
+      "name_placeholder": "Seu nome",
+      "email_placeholder": "you@example.com",
+      "subject_placeholder": "Consulta de projeto",
+      "message_placeholder": "Escreva sua mensagem..."
+    },
+    "cards": {
+      "email": "Email",
+      "connect": "Conectar",
+      "availability": "Disponibilidade"
+    },
+    "quick": {
+      "heading": "Prefere outras formas de contato?",
+      "linkedin": {
+        "title": "Mensagem no LinkedIn",
+        "description": "Adicione um perfil profissional para facilitar conexões.",
+        "action": "Abrir LinkedIn"
+      },
+      "resume": {
+        "title": "Ver curriculo",
+        "description": "Explique como consultar ou solicitar um currículo.",
+        "action": "Obter curriculo"
+      },
+      "github": {
+        "title": "GitHub",
+        "description": "Adicione links para contribuições ou projetos que deseja compartilhar.",
+        "action": "Ver GitHub"
+      }
+    },
+    "success": {
+      "title": "Mensagem enviada com sucesso!",
+      "description": "Personalize esta mensagem com os próximos passos após o envio do formulário."
+    }
+  },
+  "resume": {
+    "eyebrow": "Curriculo",
+    "heading": "Informações do currículo",
+    "lead": "Explique como consultar ou solicitar um currículo.",
+    "card_title": "Detalhes do currículo",
+    "card_description": "Adicione um link para download ou explique como solicitar uma cópia.",
+    "email_action": "Contato",
+    "home_action": "Voltar ao inicio"
+  }
+}

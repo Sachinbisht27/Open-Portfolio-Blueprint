@@ -1,0 +1,223 @@
+{
+  "meta": {
+    "description": "Configurable multilingual portfolio template built with Flask."
+  },
+  "person": {
+    "full_name": "Your Name",
+    "first_name": "Your Name",
+    "initials": "YN",
+    "email": "you@example.com",
+    "resume_email": "you@example.com",
+    "location": "Add your location (optional)",
+    "availability": {
+      "en": "Set your availability before publishing"
+    }
+  },
+  "hero": {
+    "roles": [
+      "Your role",
+      "Your specialty"
+    ],
+    "stats": [],
+    "card": {
+      "badge": "Sample content",
+      "title": "Introduce your work",
+      "description": "Customize this card with a short introduction to the work you want to feature."
+    }
+  },
+  "about": {
+    "paragraphs": [
+      "Use this section to introduce yourself, your interests, and the kind of work you want to do.",
+      "Add a few details that help visitors understand your approach. Keep every statement accurate and specific to you."
+    ]
+  },
+  "social_links": [
+    {
+      "label": "GitHub",
+      "url": "https://github.com/your-handle",
+      "icon": "fab fa-github"
+    },
+    {
+      "label": "LinkedIn",
+      "url": "https://www.linkedin.com/in/your-handle/",
+      "icon": "fab fa-linkedin"
+    },
+    {
+      "label": "Portfolio",
+      "url": "https://example.com",
+      "icon": "fas fa-globe"
+    }
+  ],
+  "experience": [
+    {
+      "period": "Year – Year",
+      "company": "Example Organization",
+      "role": "Your Role",
+      "description": "Replace this example with an accurate summary of your responsibilities and contributions.",
+      "tech": [
+        "Add a tool",
+        "Add a skill"
+      ]
+    }
+  ],
+  "skill_groups": [
+    {
+      "title": "Example category",
+      "skills": [
+        {
+          "name": "Add a skill"
+        },
+        {
+          "name": "Add another skill"
+        }
+      ]
+    }
+  ],
+  "featured_projects": [
+    {
+      "categories": [
+        "web"
+      ],
+      "company": "Sample project",
+      "period": "Example",
+      "title": "Project title",
+      "description": "Replace this sample card with the problem, your contribution, and a verified result.",
+      "stats": [],
+      "link": {
+        "type": "internal",
+        "endpoint": "case_study",
+        "label": "View sample case study"
+      }
+    },
+    {
+      "categories": [
+        "design"
+      ],
+      "company": "Sample project",
+      "period": "Example",
+      "title": "Another project",
+      "description": "Add a short, accurate description of a project you want to share.",
+      "stats": [],
+      "link": {
+        "type": "internal",
+        "endpoint": "projects",
+        "label": "View sample projects"
+      }
+    },
+    {
+      "categories": [
+        "open-source"
+      ],
+      "company": "Sample project",
+      "period": "Example",
+      "title": "Open-source project",
+      "description": "Show how to describe a contribution, its context, and what you learned.",
+      "stats": [],
+      "link": {
+        "type": "internal",
+        "endpoint": "projects",
+        "label": "Browse sample projects"
+      }
+    }
+  ],
+  "projects_page": {
+    "projects": [
+      {
+        "company": "Sample project",
+        "period": "Example",
+        "title": "Project title",
+        "description": "Describe the problem, your approach, and the outcome. Replace all sample details before publishing.",
+        "link": {
+          "type": "internal",
+          "endpoint": "case_study",
+          "label": "Read sample case study"
+        }
+      },
+      {
+        "company": "Sample project",
+        "period": "Example",
+        "title": "Another project",
+        "description": "Add another project summary that reflects your own work.",
+        "link": {
+          "type": "internal",
+          "endpoint": "contact",
+          "label": "Add project link"
+        }
+      },
+      {
+        "company": "Sample project",
+        "period": "Example",
+        "title": "Open-source project",
+        "description": "Describe a contribution or community project using details you can verify.",
+        "link": {
+          "type": "internal",
+          "endpoint": "contact",
+          "label": "Add project link"
+        }
+      }
+    ]
+  },
+  "achievements": [
+    {
+      "badge": "Example",
+      "title": "Add a verified achievement",
+      "description": "Replace this sample with an accurate outcome, recognition, or milestone."
+    },
+    {
+      "badge": "Example",
+      "title": "Describe your impact",
+      "description": "Use a result you can support with evidence, or remove this card."
+    },
+    {
+      "badge": "Example",
+      "title": "Share a milestone",
+      "description": "Customize or remove sample cards that do not fit your portfolio."
+    }
+  ],
+  "contact": {
+    "form": {
+      "action": "https://formsubmit.co/you@example.com",
+      "subject": "New portfolio contact",
+      "success_redirect": ""
+    },
+    "quick_links": {
+      "linkedin": "https://www.linkedin.com/in/your-handle/",
+      "github": "https://github.com/your-handle"
+    }
+  },
+  "resume": {
+    "email": "you@example.com"
+  },
+  "case_study": {
+    "title": "Sample Case Study: Project Title",
+    "lead": "This fictional sample demonstrates a case study structure. Replace it with accurate details about your own work before publishing.",
+    "sections": [
+      {
+        "title": "Context",
+        "body": "Describe the user need, the problem to solve, and any important constraints."
+      },
+      {
+        "title": "Approach",
+        "items": [
+          "Summarize the research or discovery that informed the work.",
+          "Describe the solution and the decisions behind it.",
+          "List tools or technologies only when they are relevant to the project."
+        ]
+      },
+      {
+        "title": "Your Contributions",
+        "items": [
+          "Explain the work you personally completed.",
+          "Clarify how you collaborated with others."
+        ]
+      },
+      {
+        "title": "Outcomes",
+        "items": [
+          "Add measured results only when you can verify them.",
+          "Describe what you learned and what you would improve next."
+        ]
+      }
+    ]
+  }
+}

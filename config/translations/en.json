@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "titles": {
+      "home": "Home",
+      "projects": "Projects",
+      "case_study": "Case Study",
+      "contact": "Contact",
+      "resume": "Resume"
+    }
+  },
+  "common": {
+    "skip_to_content": "Skip to content",
+    "theme_toggle": "Toggle dark mode",
+    "light_mode": "Switch to light mode",
+    "dark_mode": "Switch to dark mode",
+    "language": "Language",
+    "nav_toggle": "Toggle navigation",
+    "nav": {
+      "home": "Home",
+      "about": "About",
+      "skills": "Skills",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "footer": "© {year} {name}. Built to be forked and customized.",
+    "footer_links": {
+      "about": "About",
+      "projects": "Projects",
+      "contact": "Contact"
+    },
+    "sending": "Sending...",
+    "copy_email": "Copy email",
+    "copied": "Copied to clipboard!",
+    "notification_error": "Something went wrong. Please try again."
+  },
+  "home": {
+    "hero": {
+      "headline": "Hi, I'm {name}.",
+      "subheadline": "A simple starting point for sharing your work.",
+      "description": "Use this space to summarize your work and what makes your approach distinct.",
+      "actions": {
+        "work": "Get in touch",
+        "projects": "View projects"
+      }
+    },
+    "about": {
+      "eyebrow": "About",
+      "heading": "A little about you"
+    },
+    "experience": {
+      "eyebrow": "Experience",
+      "heading": "Example experience"
+    },
+    "skills": {
+      "eyebrow": "Skills",
+      "heading": "Skills and tools"
+    },
+    "projects": {
+      "eyebrow": "Projects",
+      "heading": "Sample projects",
+      "filters": {
+        "all": "All Projects",
+        "web": "Web Apps",
+        "design": "Design",
+        "open_source": "Open source"
+      },
+      "filter_status": "Showing {count} projects for {filter}."
+    },
+    "achievements": {
+      "eyebrow": "Achievements",
+      "heading": "Recognition and milestones"
+    },
+    "contact": {
+      "eyebrow": "Contact",
+      "heading": "Let's build something exceptional together.",
+      "title": "Start a conversation",
+      "description": "Customize this note with guidance for people who want to contact you.",
+      "email": "Email me",
+      "resume": "Download resume"
+    }
+  },
+  "projects_page": {
+    "eyebrow": "Projects",
+    "heading": "Case studies and highlights.",
+    "lead": "Sample project summaries that show how to present your work."
+  },
+  "project_case": {
+    "eyebrow": "Case Study",
+    "primary_cta": "Discuss a similar project",
+    "secondary_cta": "Back to projects"
+  },
+  "contact": {
+    "eyebrow": "Contact",
+    "heading": "Let's create something amazing together.",
+    "lead": "Use the form below for a question, collaboration idea, or project inquiry.",
+    "form": {
+      "name": "Your Name",
+      "email": "Email Address",
+      "subject": "Subject",
+      "message": "Message",
+      "send": "Send Message",
+      "name_placeholder": "Your Name",
+      "email_placeholder": "you@example.com",
+      "subject_placeholder": "Project inquiry",
+      "message_placeholder": "Write your message..."
+    },
+    "cards": {
+      "email": "Email",
+      "connect": "Connect",
+      "availability": "Availability"
+    },
+    "quick": {
+      "heading": "Prefer other ways to connect?",
+      "linkedin": {
+        "title": "LinkedIn Message",
+        "description": "Add a professional profile link for visitors to connect with you.",
+        "action": "Open LinkedIn"
+      },
+      "resume": {
+        "title": "View Resume",
+        "description": "Explain how visitors can view or request a resume.",
+        "action": "Get Resume"
+      },
+      "github": {
+        "title": "GitHub",
+        "description": "Add links to open-source contributions or projects you want to share.",
+        "action": "View GitHub"
+      }
+    },
+    "success": {
+      "title": "Message sent successfully!",
+      "description": "Customize this confirmation with clear next steps after the form is sent."
+    }
+  },
+  "resume": {
+    "eyebrow": "Resume",
+    "heading": "Resume information",
+    "lead": "Explain how visitors can view or request a resume.",
+    "card_title": "Resume details",
+    "card_description": "Add a download link or describe how visitors can request a copy.",
+    "email_action": "Contact",
+    "home_action": "Back to home"
+  }
+}

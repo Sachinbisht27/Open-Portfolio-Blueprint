@@ -1,0 +1,144 @@
+{
+  "meta": {
+    "titles": {
+      "home": "الرئيسية",
+      "projects": "المشاريع",
+      "case_study": "دراسة حالة",
+      "contact": "تواصل",
+      "resume": "السيرة الذاتية"
+    }
+  },
+  "common": {
+    "skip_to_content": "انتقل الى المحتوى",
+    "theme_toggle": "تبديل الوضع الداكن",
+    "light_mode": "التبديل الى الوضع الفاتح",
+    "dark_mode": "التبديل الى الوضع الداكن",
+    "language": "اللغة",
+    "nav_toggle": "تبديل التنقل",
+    "nav": {
+      "home": "الرئيسية",
+      "about": "نبذة",
+      "skills": "المهارات",
+      "projects": "المشاريع",
+      "contact": "تواصل"
+    },
+    "footer": "© {year} {name}. مبني ليمكنك نسخه وتخصيصه.",
+    "footer_links": {
+      "about": "نبذة",
+      "projects": "المشاريع",
+      "contact": "تواصل"
+    },
+    "sending": "جار الارسال...",
+    "copy_email": "نسخ البريد",
+    "copied": "تم النسخ الى الحافظة!",
+    "notification_error": "حدث خطأ ما. يرجى المحاولة مرة أخرى."
+  },
+  "home": {
+    "hero": {
+      "headline": "مرحبا، انا {name}.",
+      "subheadline": "نقطة بداية بسيطة لمشاركة أعمالك.",
+      "description": "استخدم هذا المكان لتلخيص عملك وما يميز أسلوبك.",
+      "actions": {
+        "work": "تواصل",
+        "projects": "عرض المشاريع"
+      }
+    },
+    "about": {
+      "eyebrow": "نبذة",
+      "heading": "نبذة عنك"
+    },
+    "experience": {
+      "eyebrow": "الخبرة",
+      "heading": "نماذج للخبرة"
+    },
+    "skills": {
+      "eyebrow": "المهارات",
+      "heading": "المهارات والأدوات"
+    },
+    "projects": {
+      "eyebrow": "المشاريع",
+      "heading": "نماذج للمشاريع",
+      "filters": {
+        "all": "كل المشاريع",
+        "web": "تطبيقات ويب",
+        "design": "التصميم",
+        "open_source": "مفتوح المصدر"
+      },
+      "filter_status": "يتم عرض {count} مشاريع ضمن {filter}."
+    },
+    "achievements": {
+      "eyebrow": "الانجازات",
+      "heading": "الاعترافات والمحطات"
+    },
+    "contact": {
+      "eyebrow": "تواصل",
+      "heading": "لنصنع شيئا استثنائيا معا.",
+      "title": "ابدأ محادثة",
+      "description": "خصّص هذه الرسالة لإرشاد الزوار الراغبين في التواصل معك.",
+      "email": "راسلني",
+      "resume": "تنزيل السيرة الذاتية"
+    }
+  },
+  "projects_page": {
+    "eyebrow": "المشاريع",
+    "heading": "دراسات حالة وابرز الاعمال.",
+    "lead": "نماذج توضح طرق عرض المشاريع."
+  },
+  "project_case": {
+    "eyebrow": "دراسة حالة",
+    "primary_cta": "مناقشة مشروع مشابه",
+    "secondary_cta": "العودة الى المشاريع"
+  },
+  "contact": {
+    "eyebrow": "تواصل",
+    "heading": "لننشئ شيئا مذهلا معا.",
+    "lead": "أرسل سؤالاً أو فكرة تعاون أو استفساراً عن مشروع باستخدام النموذج.",
+    "form": {
+      "name": "اسمك",
+      "email": "البريد الالكتروني",
+      "subject": "الموضوع",
+      "message": "الرسالة",
+      "send": "ارسال الرسالة",
+      "name_placeholder": "اسمك",
+      "email_placeholder": "you@example.com",
+      "subject_placeholder": "استفسار مشروع",
+      "message_placeholder": "اكتب رسالتك..."
+    },
+    "cards": {
+      "email": "البريد",
+      "connect": "التواصل",
+      "availability": "التوفر"
+    },
+    "quick": {
+      "heading": "هل تفضّل طرقًا أخرى للتواصل؟",
+      "linkedin": {
+        "title": "رسالة LinkedIn",
+        "description": "أضف رابط ملفك المهني ليتمكن الزوار من التواصل معك.",
+        "action": "فتح LinkedIn"
+      },
+      "resume": {
+        "title": "عرض السيرة الذاتية",
+        "description": "اشرح كيفية الاطلاع على السيرة الذاتية أو طلبها.",
+        "action": "الحصول على السيرة"
+      },
+      "github": {
+        "title": "GitHub",
+        "description": "أضف روابط لمساهمات مفتوحة المصدر أو مشاريع تريد مشاركتها.",
+        "action": "عرض GitHub"
+      }
+    },
+    "success": {
+      "title": "تم ارسال الرسالة بنجاح!",
+      "description": "خصّص هذه الرسالة لتوضيح الخطوات التالية بعد إرسال النموذج."
+    }
+  },
+  "resume": {
+    "eyebrow": "السيرة الذاتية",
+    "heading": "معلومات السيرة الذاتية",
+    "lead": "اشرح كيفية الاطلاع على السيرة الذاتية أو طلبها.",
+    "card_title": "تفاصيل السيرة الذاتية",
+    "card_description": "أضف رابط تنزيل أو اشرح كيفية طلب نسخة.",
+    "email_action": "تواصل",
+    "home_action": "العودة للرئيسية"
+  }
+}
