@@ -1,10 +1,12 @@
 # Open Portfolio Blueprint (Flask)
-A configurable, multilingual developer portfolio template built for open source.
+A configurable, multilingual portfolio sample built for anyone to adapt.
+
+The profile, projects, experience, case study, and contact details shipped in this repository are placeholders for demonstration. Replace them with your own accurate content and links before publishing.
 
 ## 30-Second Overview
 - **Problem it solves:** Most portfolio templates are hardcoded, single-language, and difficult to reuse.
-- **Who it is for:** Developers, students, freelancers, and small teams who need a production-ready portfolio base.
-- **Why choose this:** You can fork it, update a single config file, support multiple languages, and ship with built-in quality checks.
+- **Who it is for:** Anyone who wants a portfolio base they can customize.
+- **Why choose this:** You can fork it, update a single config file, support multiple languages, and adapt the layout to your needs.
 
 ## Features
 - Config-driven profile, projects, skills, and case-study content via `config/site_config.json`
@@ -37,9 +39,16 @@ Update your details in:
 At minimum, change:
 - `person.full_name`
 - `person.email`
+- `person.availability` and `person.location`
 - `social_links`
 - `experience`
+- `skill_groups`
 - `featured_projects`
+- `projects_page.projects`
+- `achievements`
+- `case_study`
+
+The included contact form and social URLs use example addresses and handles. Replace them with destinations you control before deploying. Sample metrics and skill ratings are intentionally omitted; only add claims you can support.
 
 ## Configuration Model
 - **Primary customization surface:** `config/site_config.json`
@@ -96,6 +105,7 @@ This project follows **Semantic Versioning** (`MAJOR.MINOR.PATCH`).
 
 ## Example Usage
 - Sample configuration: `examples/site_config.example.json`
+- The default configuration is also generic sample content so the app can be previewed immediately.
 
 ## Security
 If you discover a security issue, please open a private report first (see `CONTRIBUTING.md`).

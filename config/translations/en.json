@@ -31,39 +31,38 @@
     "sending": "Sending...",
     "copy_email": "Copy email",
     "copied": "Copied to clipboard!",
-    "notification_error": "Something went wrong. Please try again.",
-    "available_now": "Available now"
+    "notification_error": "Something went wrong. Please try again."
   },
   "home": {
     "hero": {
       "headline": "Hi, I'm {name}.",
-      "subheadline": "Building thoughtful, high-performing web experiences.",
-      "description": "I design and ship responsive websites and web apps with clean architecture, delightful UI, and scalable systems.",
+      "subheadline": "A simple starting point for sharing your work.",
+      "description": "Use this space to summarize your work and what makes your approach distinct.",
       "actions": {
-        "work": "Let's work together",
+        "work": "Get in touch",
         "projects": "View projects"
       }
     },
     "about": {
       "eyebrow": "About",
-      "heading": "Designing with intention, engineering with rigor."
+      "heading": "A little about you"
     },
     "experience": {
       "eyebrow": "Experience",
-      "heading": "Professional journey"
+      "heading": "Example experience"
     },
     "skills": {
       "eyebrow": "Skills",
-      "heading": "Tools and technologies I use every day."
+      "heading": "Skills and tools"
     },
     "projects": {
       "eyebrow": "Projects",
-      "heading": "Selected work balancing craft and impact.",
+      "heading": "Sample projects",
       "filters": {
         "all": "All Projects",
         "web": "Web Apps",
-        "education": "Education",
-        "mentorship": "Mentorship"
+        "design": "Design",
+        "open_source": "Open source"
       },
       "filter_status": "Showing {count} projects for {filter}."
     },
@@ -75,7 +74,7 @@
       "eyebrow": "Contact",
       "heading": "Let's build something exceptional together.",
       "title": "Start a conversation",
-      "description": "Share your goals, timeline, or a quick product idea. I'll reply within 24 hours.",
+      "description": "Customize this note with guidance for people who want to contact you.",
       "email": "Email me",
       "resume": "Download resume"
     }
@@ -83,7 +82,7 @@
   "projects_page": {
     "eyebrow": "Projects",
     "heading": "Case studies and highlights.",
-    "lead": "A curated set of projects showing product thinking, architecture, and delivery."
+    "lead": "Sample project summaries that show how to present your work."
   },
   "project_case": {
     "eyebrow": "Case Study",
@@ -93,17 +92,17 @@
   "contact": {
     "eyebrow": "Contact",
     "heading": "Let's create something amazing together.",
-    "lead": "Have a project in mind? Want to collaborate? Or just want to say hi? I'd love to hear from you.",
+    "lead": "Use the form below for a question, collaboration idea, or project inquiry.",
     "form": {
       "name": "Your Name",
       "email": "Email Address",
       "subject": "Subject",
       "message": "Message",
       "send": "Send Message",
-      "name_placeholder": "John Doe",
-      "email_placeholder": "john@example.com",
+      "name_placeholder": "Your Name",
+      "email_placeholder": "you@example.com",
       "subject_placeholder": "Project inquiry",
-      "message_placeholder": "Tell me about your project..."
+      "message_placeholder": "Write your message..."
     },
     "cards": {
       "email": "Email",
@@ -114,32 +113,32 @@
       "heading": "Prefer other ways to connect?",
       "linkedin": {
         "title": "LinkedIn Message",
-        "description": "Connect with me professionally and send a message on LinkedIn.",
+        "description": "Add a professional profile link for visitors to connect with you.",
         "action": "Open LinkedIn"
       },
       "resume": {
         "title": "View Resume",
-        "description": "Get my latest resume and experience snapshot.",
+        "description": "Explain how visitors can view or request a resume.",
         "action": "Get Resume"
       },
       "github": {
         "title": "GitHub",
-        "description": "Explore open-source contributions and personal projects.",
+        "description": "Add links to open-source contributions or projects you want to share.",
         "action": "View GitHub"
       }
     },
     "success": {
       "title": "Message sent successfully!",
-      "description": "Thank you for reaching out. I'll get back to you within 24 hours."
+      "description": "Customize this confirmation with clear next steps after the form is sent."
     }
   },
   "resume": {
     "eyebrow": "Resume",
-    "heading": "Get my full resume.",
-    "lead": "Need a detailed CV? I can share a PDF along with references and recent project summaries.",
-    "card_title": "Request the latest version",
-    "card_description": "Send a quick note and I'll reply with the most recent resume and portfolio links.",
-    "email_action": "Email for resume",
+    "heading": "Resume information",
+    "lead": "Explain how visitors can view or request a resume.",
+    "card_title": "Resume details",
+    "card_description": "Add a download link or describe how visitors can request a copy.",
+    "email_action": "Contact",
     "home_action": "Back to home"
   }
 }

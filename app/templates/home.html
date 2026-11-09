@@ -54,13 +54,13 @@
                     <p class="creative-terminal"><span class="prompt">$</span> npm run ship <span class="terminal-cursor"></span></p>
                 </div>
                 <div class="creative-panel creative-status">
-                    <p class="creative-label">Build Pulse</p>
-                    <p class="creative-metric">24 deploys this month</p>
+                    <p class="creative-label">Project Preview</p>
+                    <p class="creative-metric">Your latest work</p>
                     <div class="creative-progress" aria-hidden="true"><span></span></div>
                     <ul class="creative-badges" aria-hidden="true">
-                        <li>tests: pass</li>
-                        <li>score: 98</li>
-                        <li>uptime: 99.9%</li>
+                        <li>sample: edit</li>
+                        <li>status: customize</li>
+                        <li>data: replace</li>
                     </ul>
                 </div>
             </div>
@@ -140,11 +140,15 @@
                     <div class="skill-item">
                         <div class="skill-header">
                             <span>{{ skill.name }}</span>
-                            <span>{{ skill.level }}%</span>
+                            {% if skill.level is defined %}
+                                <span>{{ skill.level }}%</span>
+                            {% endif %}
                         </div>
-                        <div class="skill-bar">
-                            <div class="skill-progress" data-percentage="{{ skill.level }}" style="--skill-progress: {{ skill.level }}%;"></div>
-                        </div>
+                        {% if skill.level is defined %}
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-percentage="{{ skill.level }}" style="--skill-progress: {{ skill.level }}%;"></div>
+                            </div>
+                        {% endif %}
                     </div>
                 {% endfor %}
             </article>
@@ -161,8 +165,8 @@
     <div class="filter-container animate-on-scroll" role="group" aria-labelledby="projects-heading" data-filter-status-template="{{ t('home.projects.filter_status') }}">
         <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">{{ t('home.projects.filters.all') }}</button>
         <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">{{ t('home.projects.filters.web') }}</button>
-        <button class="filter-btn" type="button" data-filter="education" aria-pressed="false">{{ t('home.projects.filters.education') }}</button>
-        <button class="filter-btn" type="button" data-filter="mentorship" aria-pressed="false">{{ t('home.projects.filters.mentorship') }}</button>
+        <button class="filter-btn" type="button" data-filter="design" aria-pressed="false">{{ t('home.projects.filters.design') }}</button>
+        <button class="filter-btn" type="button" data-filter="open-source" aria-pressed="false">{{ t('home.projects.filters.open_source') }}</button>
     </div>
     <p id="project-filter-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
 
