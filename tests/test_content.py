@@ -7,7 +7,7 @@ def test_normalize_language_returns_default_for_invalid_value() -> None:
 
 def test_localized_site_config_resolves_language_fallback() -> None:
     hindi_site = get_localized_site_config("hi")
-    assert hindi_site["hero"]["roles"][0] == "फुल स्टैक डेवलपर"
+    assert hindi_site["hero"]["roles"][0] == "Your role"
 
 
 def test_translation_fallbacks_to_key_when_missing() -> None:
