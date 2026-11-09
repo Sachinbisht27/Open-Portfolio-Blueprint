@@ -2,6 +2,7 @@
 
 ## 1. Update Personal Data
 Edit `config/site_config.json`:
+
 - Name and initials
 - Email and social links
 - Experience, skills, and projects
