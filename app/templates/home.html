@@ -22,7 +22,7 @@
         <dl class="stats">
             {% for stat in site.hero.stats %}
                 <div>
-                    <dt class="stat-number" data-value="{{ stat.value }}" data-suffix="{{ stat.suffix }}">0{{ stat.suffix }}</dt>
+                    <dt class="stat-number" data-value="{{ stat.value }}" data-suffix="{{ stat.suffix }}">{{ stat.value }}{{ stat.suffix }}</dt>
                     <dd>{{ stat.label }}</dd>
                 </div>
             {% endfor %}
@@ -143,7 +143,7 @@
                             <span>{{ skill.level }}%</span>
                         </div>
                         <div class="skill-bar">
-                            <div class="skill-progress" data-percentage="{{ skill.level }}"></div>
+                            <div class="skill-progress" data-percentage="{{ skill.level }}" style="--skill-progress: {{ skill.level }}%;"></div>
                         </div>
                     </div>
                 {% endfor %}
@@ -155,15 +155,16 @@
 <section id="projects" class="section projects">
     <div class="section-head animate-on-scroll">
         <p class="eyebrow">{{ t('home.projects.eyebrow') }}</p>
-        <h2>{{ t('home.projects.heading') }}</h2>
+        <h2 id="projects-heading">{{ t('home.projects.heading') }}</h2>
     </div>
 
-    <div class="filter-container animate-on-scroll">
-        <button class="filter-btn active" data-filter="all">{{ t('home.projects.filters.all') }}</button>
-        <button class="filter-btn" data-filter="web">{{ t('home.projects.filters.web') }}</button>
-        <button class="filter-btn" data-filter="education">{{ t('home.projects.filters.education') }}</button>
-        <button class="filter-btn" data-filter="mentorship">{{ t('home.projects.filters.mentorship') }}</button>
+    <div class="filter-container animate-on-scroll" role="group" aria-labelledby="projects-heading" data-filter-status-template="{{ t('home.projects.filter_status') }}">
+        <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">{{ t('home.projects.filters.all') }}</button>
+        <button class="filter-btn" type="button" data-filter="web" aria-pressed="false">{{ t('home.projects.filters.web') }}</button>
+        <button class="filter-btn" type="button" data-filter="education" aria-pressed="false">{{ t('home.projects.filters.education') }}</button>
+        <button class="filter-btn" type="button" data-filter="mentorship" aria-pressed="false">{{ t('home.projects.filters.mentorship') }}</button>
     </div>
+    <p id="project-filter-status" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></p>
 
     <div class="projects-grid">
         {% for project in site.featured_projects %}

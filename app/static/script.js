@@ -1,6 +1,8 @@
 const root = document.documentElement;
 const body = document.body;
 
+root.classList.add('has-js');
+
 const uiMessages = {
     sending: body?.dataset.sendingLabel || 'Sending...',
     copied: body?.dataset.copySuccess || 'Copied to clipboard!',
@@ -134,67 +136,86 @@ window.addEventListener('scroll', () => {
 // ============================================
 // SCROLL ANIMATIONS (INTERSECTION OBSERVER)
 // ============================================
-const observerOptions = {
-    threshold: 0.1,
-    rootMargin: '0px 0px -50px 0px'
-};
+if ('IntersectionObserver' in window) {
+    root.classList.add('has-scroll-animations');
 
-const observer = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('animate-in');
-        }
-    });
-}, observerOptions);
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: '0px 0px -50px 0px'
+    };
 
-document.querySelectorAll('.animate-on-scroll').forEach((element) => observer.observe(element));
+    const observer = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('animate-in');
+            }
+        });
+    }, observerOptions);
+
+    document.querySelectorAll('.animate-on-scroll').forEach((element) => observer.observe(element));
+}
 
 // ============================================
 // SKILL BAR ANIMATION
 // ============================================
-const skillBars = document.querySelectorAll('.skill-progress');
-const skillObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            const percentage = entry.target.getAttribute('data-percentage');
-            entry.target.style.width = `${percentage}%`;
-        }
+if ('IntersectionObserver' in window) {
+    const skillBars = document.querySelectorAll('.skill-progress');
+    skillBars.forEach((bar) => {
+        bar.style.width = '0';
     });
-}, { threshold: 0.5 });
+    const skillObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                const percentage = entry.target.getAttribute('data-percentage');
+                entry.target.style.width = `${percentage}%`;
+            }
+        });
+    }, { threshold: 0.5 });
 
-skillBars.forEach((bar) => skillObserver.observe(bar));
+    skillBars.forEach((bar) => skillObserver.observe(bar));
+}
 
 // ============================================
 // TIMELINE ANIMATION
 // ============================================
-const timelineItems = document.querySelectorAll('.timeline-item');
-const timelineObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-            entry.target.classList.add('timeline-visible');
-        }
-    });
-}, { threshold: 0.2 });
+if ('IntersectionObserver' in window) {
+    const timelineItems = document.querySelectorAll('.timeline-item');
+    const timelineObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('timeline-visible');
+            }
+        });
+    }, { threshold: 0.2 });
 
-timelineItems.forEach((item) => timelineObserver.observe(item));
+    timelineItems.forEach((item) => timelineObserver.observe(item));
+}
 
 // ============================================
 // PROJECT FILTER
 // ============================================
 const filterButtons = document.querySelectorAll('.filter-btn');
 const projectCards = document.querySelectorAll('.project-card[data-category]');
+const filterContainer = document.querySelector('.filter-container');
+const filterStatus = document.getElementById('project-filter-status');
 
 filterButtons.forEach((button) => {
     button.addEventListener('click', () => {
         const filter = button.getAttribute('data-filter');
 
-        filterButtons.forEach((btn) => btn.classList.remove('active'));
-        button.classList.add('active');
+        filterButtons.forEach((btn) => {
+            const isActive = btn === button;
+            btn.classList.toggle('active', isActive);
+            btn.setAttribute('aria-pressed', String(isActive));
+        });
 
+        let visibleProjectCount = 0;
         projectCards.forEach((card) => {
             const categories = (card.getAttribute('data-category') || '').split(' ');
+            const matchesFilter = filter === 'all' || categories.includes(filter);
 
-            if (filter === 'all' || categories.includes(filter)) {
+            if (matchesFilter) {
+                visibleProjectCount += 1;
                 card.style.display = 'grid';
                 window.setTimeout(() => {
                     card.style.opacity = '1';
@@ -208,6 +229,13 @@ filterButtons.forEach((button) => {
                 }, 220);
             }
         });
+
+        if (filterStatus) {
+            const statusTemplate = filterContainer?.dataset.filterStatusTemplate || '{count} projects shown for {filter}.';
+            filterStatus.textContent = statusTemplate
+                .replace('{count}', String(visibleProjectCount))
+                .replace('{filter}', button.textContent.trim());
+        }
     });
 });
 
@@ -303,36 +331,41 @@ window.addEventListener('mousemove', (event) => {
 // ============================================
 // STATS COUNTER ANIMATION
 // ============================================
-const stats = document.querySelectorAll('.stat-number');
-const statsObserver = new IntersectionObserver((entries) => {
-    entries.forEach((entry) => {
-        if (!entry.isIntersecting) {
-            return;
-        }
-
-        const target = entry.target;
-        const finalValue = Number(target.getAttribute('data-value') || '0');
-        const suffix = target.getAttribute('data-suffix') || '';
-        const duration = 1400;
-        const increment = finalValue / (duration / 16);
-        let currentValue = 0;
-
-        const updateCounter = () => {
-            currentValue += increment;
-            if (currentValue < finalValue) {
-                target.textContent = `${Math.floor(currentValue)}${suffix}`;
-                requestAnimationFrame(updateCounter);
+if ('IntersectionObserver' in window) {
+    const stats = document.querySelectorAll('.stat-number');
+    stats.forEach((stat) => {
+        stat.textContent = `0${stat.getAttribute('data-suffix') || ''}`;
+    });
+    const statsObserver = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+            if (!entry.isIntersecting) {
                 return;
             }
-            target.textContent = `${finalValue}${suffix}`;
-        };
 
-        updateCounter();
-        statsObserver.unobserve(target);
-    });
-}, { threshold: 0.5 });
+            const target = entry.target;
+            const finalValue = Number(target.getAttribute('data-value') || '0');
+            const suffix = target.getAttribute('data-suffix') || '';
+            const duration = 1400;
+            const increment = finalValue / (duration / 16);
+            let currentValue = 0;
 
-stats.forEach((stat) => statsObserver.observe(stat));
+            const updateCounter = () => {
+                currentValue += increment;
+                if (currentValue < finalValue) {
+                    target.textContent = `${Math.floor(currentValue)}${suffix}`;
+                    requestAnimationFrame(updateCounter);
+                    return;
+                }
+                target.textContent = `${finalValue}${suffix}`;
+            };
+
+            updateCounter();
+            statsObserver.unobserve(target);
+        });
+    }, { threshold: 0.5 });
+
+    stats.forEach((stat) => statsObserver.observe(stat));
+}
 
 // ============================================
 // LOADING ANIMATION

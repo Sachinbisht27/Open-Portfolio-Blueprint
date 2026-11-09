@@ -64,7 +64,8 @@
         "web": "வெப் ஆப்ஸ்",
         "education": "கல்வி",
         "mentorship": "வழிகாட்டல்"
-      }
+      },
+      "filter_status": "{filter}க்கான {count} திட்டங்கள் காட்டப்படுகின்றன."
     },
     "achievements": {
       "eyebrow": "சாதனைகள்",

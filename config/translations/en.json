@@ -64,7 +64,8 @@
         "web": "Web Apps",
         "education": "Education",
         "mentorship": "Mentorship"
-      }
+      },
+      "filter_status": "Showing {count} projects for {filter}."
     },
     "achievements": {
       "eyebrow": "Achievements",

@@ -64,7 +64,8 @@
         "web": "Apps web",
         "education": "Educacion",
         "mentorship": "Mentoría"
-      }
+      },
+      "filter_status": "Se muestran {count} proyectos para {filter}."
     },
     "achievements": {
       "eyebrow": "Logros",

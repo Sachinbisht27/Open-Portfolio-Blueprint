@@ -64,7 +64,8 @@
         "web": "वेब अॅप्स",
         "education": "शिक्षण",
         "mentorship": "मेंटॉरशिप"
-      }
+      },
+      "filter_status": "{filter} साठी {count} प्रकल्प दाखवले आहेत."
     },
     "achievements": {
       "eyebrow": "उपलब्धी",
